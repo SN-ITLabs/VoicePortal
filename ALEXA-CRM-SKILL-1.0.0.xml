@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2016-10-04 03:30:25">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>AlexaCRMSkill</name>
+<new_count/>
+<origin_sys_id/>
+<release_date/>
+<remote_sys_id>036c75badb82ea4004ea750aaf961971</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>chaitanya.saragadam</sys_created_by>
+<sys_created_on>2016-10-04 03:30:25</sys_created_on>
+<sys_id>1e97ba7cdbdee2004a54f4bbaf961994</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>chaitanya.saragadam</sys_updated_by>
+<sys_updated_on>2016-10-04 03:30:25</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_include_4e2ebdbedb82ea4004ea750aaf96195c</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.OppurtunitiesService&lt;/api_name&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;OppurtunitiesService&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var OppurtunitiesService = Class.create();
+OppurtunitiesService.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+	getOppurtunitiesByAccountId: function(accountId){
+		gs.log('in getOppurtunitiesByAccountName method '+accountId,'hareesh');
+		var opp = new GlideRecord('sales_opportunity');
+		opp.addQuery('account',accountId);
+		opp.orderByDesc('sys_updated_on');
+		opp.query();
+		var result = [];
+		while(opp.next()){
+			gs.log('in getOppurtunitiesByAccountName found recoreds'+opp.getRowCount(),'hareesh');
+			result.push( {name: opp.name+'',sysID: opp.sys_id+''});
+			
+		}
+		gs.log('result opps is'+JSON.stringify(result));
+		return result;
+	},
+	updateNextSteps: function(opportunityId, nextstepsText){
+		var result = false;
+		var opp = new GlideRecord('sales_opportunity');
+		if(opp.get(opportunityId)){
+			opp.u_next_steps_journaled = nextstepsText;
+			opp.setWorkflow(false);
+			result = opp.update();
+		}
+		return result;
+	},
+	
+	getMatchingAccounts: function(accountName){
+		var acct = new GlideRecord('sales_account');
+		var names = accountName.split(' ');
+		for(var indx=0; indx&lt;names.length; indx++){
+			if(names &amp;&amp; names.length&gt;0){
+				acct.addEncodedQuery('nameLIKE' + names[indx]);							
+			}
+		}
+		var result = [];
+		acct.query();
+		while(acct.next()){
+			gs.log('in getMatchingAccounts found recoreds'+acct.getRowCount(),'hareesh');
+			result.push( {name: acct.name+'',sysID: acct.sys_id+''});			
+		}
+		gs.log('result accts is'+JSON.stringify(result));
+		return result;
+	},
+	type: 'OppurtunitiesService'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Chaitanya.Saragadam&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-09-27 18:11:35&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;4e2ebdbedb82ea4004ea750aaf96195c&lt;/sys_id&gt;&lt;sys_mod_count&gt;7&lt;/sys_mod_count&gt;&lt;sys_name&gt;OppurtunitiesService&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_4e2ebdbedb82ea4004ea750aaf96195c&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Chaitanya.Saragadam&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-09-27 20:45:58&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="AlexaCRMSkill">1e97ba7cdbdee2004a54f4bbaf961994</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>chaitanya.saragadam</sys_created_by>
+<sys_created_on>2016-10-04 03:30:25</sys_created_on>
+<sys_id>1297ba7cdbdee2004a54f4bbaf961995</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>chaitanya.saragadam</sys_updated_by>
+<sys_updated_on>2016-10-04 03:30:25</sys_updated_on>
+<table/>
+<target_name>OppurtunitiesService</target_name>
+<type>Script Include</type>
+<update_domain/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value=""/>
+<category>customer</category>
+<comments/>
+<name>x_snc_alexa_skill_utterance_7a115e76db46ea4004ea750aaf9619aa</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_snc_alexa_skill_utterance"&gt;&lt;x_snc_alexa_skill_utterance action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;keyword&gt;GetOpportunitiesAccount&lt;/keyword&gt;&lt;name&gt;GetOpportunitiesAccount&lt;/name&gt;&lt;next/&gt;&lt;script&gt;&lt;![CDATA[(function(content, attributes, erb){
+	
+	try{
+	var paginatedAccounts = [];
+	var alexaUtils;
+	var prefix = '';
+	var isFirst,isLastList;
+	var responseText = '';
+	var acctNames = [];
+		gs.info('content recieved is'+JSON.stringify(content));
+	if(content.account.value){
+		var oppurtunitiesService = new global.OppurtunitiesService();		
+		var	accounts = oppurtunitiesService.getMatchingAccounts(content.account.value);
+		
+		gs.info('accounts areeee'+ JSON.stringify(accounts));
+		if(accounts &amp;&amp; accounts.length&gt;0){
+			attributes.accounts = accounts;
+			prefix = 'There are '+ accounts.length +' matching accounts.';
+			isFirst = true;
+			if(accounts.length &gt;3){
+				paginatedAccounts = accounts.slice(0,3);
+				acctNames = getAccountNames(paginatedAccounts);
+				attributes.currentIndex = 3;
+				isLastList = false;
+				attributes.next = 'ContinueIntent,RepeatIntent,NumberIntent';
+				responseText = prefix+acctNames.join(',')+'.you can say, continue ,for next set of list or ,repeat , for repeating current set ,or cancel, for cancelling this query';
+			}else{
+				paginatedAccounts = accounts.slice(0,accounts.length);
+				acctNames = getAccountNames(paginatedAccounts);
+				isLastList = true;
+				attributes.next = 'ContinueIntent,RepeatIntent,NumberIntent';
+				responseText = prefix+acctNames.join(',')+'you can say, repeat ,for repeating current list ';
+			}
+			gs.info('paginated accounts'+ paginatedAccounts);
+			attributes.transaction = 'ResolveAccount';
+			attributes.repeat = paginatedAccounts;
+			erb.setOutputSpeech("PlainText", responseText, "");
+			erb.setAttributes(attributes);
+			erb.setEnd(false);
+			result = erb.getResponse();
+		}else{
+			erb.setOutputSpeech("PlainText", "Sorry there are no matching accounts.", "");
+			erb.setAttributes({});
+			erb.setEnd(false);
+			result = erb.getResponse();
+		}
+	}
+		
+	}catch(e){
+		gs.info('error coccured in getopps'+e);
+	}
+	
+	function getAccountNames(accountArray){
+		var resultNames = [];
+		for(var acct in accountArray){			
+			resultNames.push('Say ' + (parseInt(acct)+1) + ' ,for account, ' + accountArray[acct].name + ',');			
+		}
+		return resultNames;
+	}
+	
+})(content, attributes, new EchoResponseBuilder());]]&gt;&lt;/script&gt;&lt;sys_created_by&gt;Chaitanya.Saragadam&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-09-27 19:34:23&lt;/sys_created_on&gt;&lt;sys_id&gt;7a115e76db46ea4004ea750aaf9619aa&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Chaitanya.Saragadam&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-09-27 20:40:28&lt;/sys_updated_on&gt;&lt;/x_snc_alexa_skill_utterance&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="AlexaCRMSkill">1e97ba7cdbdee2004a54f4bbaf961994</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>chaitanya.saragadam</sys_created_by>
+<sys_created_on>2016-10-04 03:30:25</sys_created_on>
+<sys_id>1697ba7cdbdee2004a54f4bbaf961995</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>chaitanya.saragadam</sys_updated_by>
+<sys_updated_on>2016-10-04 03:30:25</sys_updated_on>
+<table/>
+<target_name>GetOpportunitiesAccount</target_name>
+<type>Intent</type>
+<update_domain/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_include_63ff4bb5dbca664004ea750aaf961981</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="DELETE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.OppurtunitiesService&lt;/api_name&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;OppurtunitiesService&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var OppurtunitiesService = Class.create();
+OppurtunitiesService.prototype = {
+    initialize: function() {
+    },
+	
+	getOppurtunitiesByAccountName: function(accountname){
+		gs.log('in getOppurtunitiesByAccountName method'+accountname,'hareesh');
+		var opp = new GlideRecord('sales_opportunity');
+		opp.addQuery('account.name','LIKE',accountname);
+		opp.orderByDesc('sys_updated_on');
+		opp.query();
+		var result = [];
+		while(opp.next()){
+					gs.log('in getOppurtunitiesByAccountName found recoreds'+opp.getRowCount(),'hareesh');
+			result.push( {name: opp.name+'',sysID: opp.sys_id+''});
+
+		}
+					gs.log('result opps is'+JSON.stringify(result));
+		return result;
+	},
+	updateOpportunity: function(nextsteps,name){
+		var opp = new GlideRecord('sales_opportunity');
+		opp.addQuery('name',name);
+		opp.query();
+		while(opp.next()){
+			opp.u_next_steps_journaled = 'abc';
+			opp.setWorkflow(false);
+			opp.update();
+		}
+	},
+
+    type: 'OppurtunitiesService'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;anil.akula&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-09-24 21:45:08&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;63ff4bb5dbca664004ea750aaf961981&lt;/sys_id&gt;&lt;sys_mod_count&gt;12&lt;/sys_mod_count&gt;&lt;sys_name&gt;OppurtunitiesService&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_63ff4bb5dbca664004ea750aaf961981&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;hareesh.neelisetti&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-09-27 15:49:09&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="AlexaCRMSkill">1e97ba7cdbdee2004a54f4bbaf961994</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>chaitanya.saragadam</sys_created_by>
+<sys_created_on>2016-10-04 03:30:25</sys_created_on>
+<sys_id>5297ba7cdbdee2004a54f4bbaf961995</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>chaitanya.saragadam</sys_updated_by>
+<sys_updated_on>2016-10-04 03:30:25</sys_updated_on>
+<table/>
+<target_name>OppurtunitiesService</target_name>
+<type>Script Include</type>
+<update_domain/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value=""/>
+<category>customer</category>
+<comments/>
+<name>x_snc_alexa_skill_utterance_9bb9b03adbcae2004a54f4bbaf9619c0</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_snc_alexa_skill_utterance"&gt;&lt;x_snc_alexa_skill_utterance action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;keyword&gt;NumberIntent&lt;/keyword&gt;&lt;name&gt;NumberIntent&lt;/name&gt;&lt;next/&gt;&lt;script&gt;&lt;![CDATA[(function(content, attributes, erb){
+	var paginatedOppurtunities = [];
+	var alexaUtils;
+	var prefix = '';
+	var isFirst,isLastList;
+	var responseText = '';
+	var oppNames = [];
+	gs.info('before messing up'+JSON.stringify(attributes));
+	gs.info('NumberIntent invoked with value'+content.number.value);
+	if(content.number.value &amp;&amp; !isNaN(parseInt(content.number.value))){
+		if(attributes.transaction == 'ResolveAccount'){
+			attributes.next = 'DescriptionIntent';
+			attributes.transaction = 'OpportunityCreation';
+			attributes.account_sys_id =
+			attributes.accounts[parseInt(content.number.value)-1].sysID;
+			gs.info('opps are eree'+attributes.account_sys_id);
+			var oppurtunitiesService = new global.OppurtunitiesService();
+			var	oppurtunities = oppurtunitiesService.getOppurtunitiesByAccountId(attributes.account_sys_id);
+			
+			gs.info('opp areeee'+ JSON.stringify(oppurtunities));
+			if(oppurtunities &amp;&amp; oppurtunities.length&gt;0){
+				attributes.oppurtunities = oppurtunities;
+				prefix = 'There are total ,'+ oppurtunities.length +',oppurtunities found, here is your list in chronological order of there modification date. ';
+				isFirst = true;
+				if(oppurtunities.length &gt;3){
+					paginatedOppurtunities = oppurtunities.slice(0,3);
+					oppNames = getOppurtunityNames(paginatedOppurtunities);
+					attributes.currentIndex = 3;
+					isLastList = false;
+					attributes.next = 'ContinueIntent,RepeatIntent,NumberIntent';
+					responseText = prefix+oppNames.join(',')+'.you can say, continue ,for next set of list or ,repeat , for repeating current set ,or cancel, for cancelling this query';
+				}else{
+					paginatedOppurtunities = oppurtunities.slice(0,oppurtunities.length);
+					oppNames = getOppurtunityNames(paginatedOppurtunities);
+					isLastList = true;
+					attributes.next = 'RepeatIntent';
+					responseText = prefix+oppNames.join(',')+'you can say, repeat ,for repeating current list ';
+				}
+				gs.info('paginated opportunities'+ paginatedOppurtunities);
+				
+				attributes.repeat = paginatedOppurtunities;
+				erb.setOutputSpeech("PlainText", responseText, "");
+				erb.setAttributes(attributes);
+				erb.setEnd(false);
+			}else{
+				erb.setOutputSpeech("PlainText", "Sorry there are no oppurtunities associated to this account", "");
+				erb.setAttributes({});
+				erb.setEnd(false);
+			}			
+		}else{
+			attributes.next = 'DescriptionIntent';
+			attributes.transaction = 'OpportunityCreation';
+			attributes.opportunity_sys_id =
+			attributes.oppurtunities[parseInt(content.number.value)-1].sysID;
+			gs.info('opps are eree'+attributes.opportunity_sys_id);			
+			erb.setOutputSpeech("PlainText", 'Opportunity is selected. Update your next actions on this opportunity by start saying as, message, is,');
+			erb.setAttributes(attributes);
+			erb.setEnd(false);
+		}				
+	}
+	result = erb.getResponse();
+	
+	
+	function getOppurtunityNames(oppArray){
+		var resultNames = [];
+		for(var opp in oppArray){			
+			resultNames.push('Say ' + (parseInt(opp)+1) + ' , for opportunity, ' + oppArray[opp].name + ',');			
+		}
+		return resultNames;
+	}
+})(content, attributes, new EchoResponseBuilder());]]&gt;&lt;/script&gt;&lt;sys_created_by&gt;hareesh.neelisetti&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-09-27 13:13:05&lt;/sys_created_on&gt;&lt;sys_id&gt;9bb9b03adbcae2004a54f4bbaf9619c0&lt;/sys_id&gt;&lt;sys_mod_count&gt;17&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Chaitanya.Saragadam&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-09-28 08:48:42&lt;/sys_updated_on&gt;&lt;/x_snc_alexa_skill_utterance&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="AlexaCRMSkill">1e97ba7cdbdee2004a54f4bbaf961994</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>chaitanya.saragadam</sys_created_by>
+<sys_created_on>2016-10-04 03:30:25</sys_created_on>
+<sys_id>5697ba7cdbdee2004a54f4bbaf961995</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>chaitanya.saragadam</sys_updated_by>
+<sys_updated_on>2016-10-04 03:30:25</sys_updated_on>
+<table/>
+<target_name>NumberIntent</target_name>
+<type>Intent</type>
+<update_domain/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value=""/>
+<category>customer</category>
+<comments/>
+<name>x_snc_alexa_skill_utterance_012c8f560fc2ae04d7f7e64be1050ecb</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_snc_alexa_skill_utterance"&gt;&lt;x_snc_alexa_skill_utterance action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;keyword&gt;GetOpportunities&lt;/keyword&gt;&lt;name&gt;GetOpportunities&lt;/name&gt;&lt;next/&gt;&lt;script&gt;&lt;![CDATA[(function(content, attributes, erb){
+	
+	try{
+	var paginatedOppurtunities = [];
+	var alexaUtils;
+	var prefix = '';
+	var isFirst,isLastList;
+	var responseText = '';
+	var oppNames = [];
+		gs.info('content recieved is'+JSON.stringify(content));
+	if(content.account.value){
+		var oppurtunitiesService = new global.OppurtunitiesService();		
+		var	oppurtunities = oppurtunitiesService.getOppurtunitiesByAccountName(content.account.value);
+		
+		gs.info('opp areeee'+ JSON.stringify(oppurtunities));
+		if(oppurtunities &amp;&amp; oppurtunities.length&gt;0){
+			attributes.oppurtunities = oppurtunities;
+			prefix = 'There are total ,'+ oppurtunities.length +',oppurtunities Identified for '+content.account.value+', Here is your list in chronological order of there modification date. ';
+			isFirst = true;
+			if(oppurtunities.length &gt;3){
+				paginatedOppurtunities = oppurtunities.slice(0,3);
+				oppNames = getOppurtunityNames(paginatedOppurtunities);
+				attributes.currentIndex = 3;
+				isLastList = false;
+				attributes.next = 'ContinueIntent,RepeatIntent,NumberIntent';
+				responseText = prefix+oppNames.join(',')+', you can say, continue ,for next set of list or , repeat , for repeating current set ,or cancel, for cancelling this query';
+			}else{
+				paginatedOppurtunities = oppurtunities.slice(0,oppurtunities.length);
+				oppNames = getOppurtunityNames(paginatedOppurtunities);
+				isLastList = true;
+				attributes.next = 'RepeatIntent';
+				responseText = prefix+oppNames.join(',')+'you can say, repeat ,for repeating current list ';
+			}
+			gs.info('paginated opportunities'+ paginatedOppurtunities);
+			
+			attributes.repeat = paginatedOppurtunities;
+			erb.setOutputSpeech("PlainText", responseText, "");
+			erb.setAttributes(attributes);
+			erb.setEnd(false);
+			result = erb.getResponse();
+		}else{
+			erb.setOutputSpeech("PlainText", "Sorry there are no oppurtunities associated to this account", "");
+			erb.setAttributes(attributes);
+			erb.setEnd(true);
+			result = erb.getResponse();
+		}
+	}
+		
+	}catch(e){
+		gs.info('error coccured in getopps'+e);
+	}
+	
+	function getOppurtunityNames(oppArray){
+		var resultNames = [];
+		for(var opp in oppArray){			
+			resultNames.push('Say ' + (opp+1) + 'for opportunity ' + oppArray[opp].name + ',');			
+		}
+		return resultNames;
+	}
+	
+	
+	
+})(content, attributes, new EchoResponseBuilder());]]&gt;&lt;/script&gt;&lt;sys_created_by&gt;anil.akula&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-09-26 10:35:44&lt;/sys_created_on&gt;&lt;sys_id&gt;012c8f560fc2ae04d7f7e64be1050ecb&lt;/sys_id&gt;&lt;sys_mod_count&gt;36&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Chaitanya.Saragadam&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-09-27 20:16:52&lt;/sys_updated_on&gt;&lt;/x_snc_alexa_skill_utterance&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="AlexaCRMSkill">1e97ba7cdbdee2004a54f4bbaf961994</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>chaitanya.saragadam</sys_created_by>
+<sys_created_on>2016-10-04 03:30:25</sys_created_on>
+<sys_id>9297ba7cdbdee2004a54f4bbaf961995</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>chaitanya.saragadam</sys_updated_by>
+<sys_updated_on>2016-10-04 03:30:25</sys_updated_on>
+<table/>
+<target_name>GetOpportunities</target_name>
+<type>Intent</type>
+<update_domain/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value=""/>
+<category>customer</category>
+<comments/>
+<name>x_snc_alexa_skill_utterance_d22ae04fdb062e4004ea750aaf96194f</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_snc_alexa_skill_utterance"&gt;&lt;x_snc_alexa_skill_utterance action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;keyword&gt;CancelIntent&lt;/keyword&gt;&lt;name&gt;CancelIntent&lt;/name&gt;&lt;next/&gt;&lt;script&gt;&lt;![CDATA[(function(content, attributes, erb){
+		erb.setOutputSpeech("PlainText", "Good bye", "");
+		erb.setReprompt("PlainText", "Good bye", "");
+		erb.setAttributes({});
+		erb.setEnd(true);
+		result = erb.getResponse();
+})(content, attributes, new EchoResponseBuilder());]]&gt;&lt;/script&gt;&lt;sys_created_by&gt;Chaitanya.Saragadam&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-09-28 06:43:06&lt;/sys_created_on&gt;&lt;sys_id&gt;d22ae04fdb062e4004ea750aaf96194f&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Chaitanya.Saragadam&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-09-28 06:44:21&lt;/sys_updated_on&gt;&lt;/x_snc_alexa_skill_utterance&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="AlexaCRMSkill">1e97ba7cdbdee2004a54f4bbaf961994</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>chaitanya.saragadam</sys_created_by>
+<sys_created_on>2016-10-04 03:30:25</sys_created_on>
+<sys_id>9697ba7cdbdee2004a54f4bbaf961995</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>chaitanya.saragadam</sys_updated_by>
+<sys_updated_on>2016-10-04 03:30:25</sys_updated_on>
+<table/>
+<target_name>CancelIntent</target_name>
+<type>Intent</type>
+<update_domain/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="ALEXA-SKILL-DEV">101eb7da13a21200d0143d622244b063</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_include_211cf57adb82ea4004ea750aaf961927</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="DELETE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_snc_alexa_skill.OppurtunitiesService&lt;/api_name&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;OppurtunitiesService&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var OppurtunitiesService = Class.create();
+OppurtunitiesService.prototype = {
+    initialize: function() {
+    },
+	
+	getOppurtunitiesByAccountName: function(accountname){
+		gs.log('in getOppurtunitiesByAccountName method'+accountname,'hareesh');
+		var opp = new GlideRecord('sales_opportunity');
+		opp.addQuery('account.name','LIKE',accountname);
+		opp.orderByDesc('sys_updated_on');
+		opp.query();
+		var result = [];
+		while(opp.next()){
+					gs.log('in getOppurtunitiesByAccountName found recoreds'+opp.getRowCount(),'hareesh');
+			result.push( {name: opp.name+'',sysID: opp.sys_id+''});
+
+		}
+					gs.log('result opps is'+JSON.stringify(result));
+		return result;
+	},
+	updateOpportunity: function(nextsteps,name){
+		var opp = new GlideRecord('sales_opportunity');
+		opp.addQuery('name',name);
+		opp.query();
+		while(opp.next()){
+			opp.u_next_steps_journaled = 'abc';
+			opp.setWorkflow(false);
+			opp.update();
+		}
+	},
+
+    type: 'OppurtunitiesService'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Chaitanya.Saragadam&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-09-27 18:02:44&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;211cf57adb82ea4004ea750aaf961927&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;OppurtunitiesService&lt;/sys_name&gt;&lt;sys_package display_value="ALEXA-SKILL-DEV" source="x_snc_alexa_skill"&gt;101eb7da13a21200d0143d622244b063&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="ALEXA-SKILL-DEV"&gt;101eb7da13a21200d0143d622244b063&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_211cf57adb82ea4004ea750aaf961927&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Chaitanya.Saragadam&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-09-27 18:02:44&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="AlexaCRMSkill">1e97ba7cdbdee2004a54f4bbaf961994</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>chaitanya.saragadam</sys_created_by>
+<sys_created_on>2016-10-04 03:30:25</sys_created_on>
+<sys_id>9e97ba7cdbdee2004a54f4bbaf961994</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>chaitanya.saragadam</sys_updated_by>
+<sys_updated_on>2016-10-04 03:30:25</sys_updated_on>
+<table/>
+<target_name>OppurtunitiesService</target_name>
+<type>Script Include</type>
+<update_domain/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value=""/>
+<category>customer</category>
+<comments/>
+<name>x_snc_alexa_skill_utterance_305c8b560fc2ae04d7f7e64be1050ef3</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_snc_alexa_skill_utterance"&gt;&lt;x_snc_alexa_skill_utterance action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;keyword&gt;ContinueIntent&lt;/keyword&gt;&lt;name&gt;ContinueIntent&lt;/name&gt;&lt;next/&gt;&lt;script&gt;&lt;![CDATA[(function(content, attributes, erb){
+	var items, paginatedItems, alexaUtils;
+	var prefix = '';
+	var names;
+	var isFirst,isLastList;
+	var responseText = '';
+	if(attributes.transaction == 'ResolveAccount'){
+		items = attributes.accounts;
+	}else {
+		items = attributes.oppurtunities;
+	}
+	
+	if(items &amp;&amp; attributes.currentIndex){
+		if((attributes.currentIndex+3) &lt; items.length){
+			paginatedItems = items.slice(attributes.currentIndex,attributes.currentIndex+3);				
+			names = getNames(paginatedItems, attributes.currentIndex, attributes.transaction == 'ResolveAccount' );
+			attributes.currentIndex = attributes.currentIndex+3;
+			attributes.next = 'ContinueIntent,RepeatIntent,NumberIntent';
+			responseText = names.join(',');
+			responseText += ',you can say .continue.for next set of list,or cancel for new query ';
+		}else{
+			paginatedItems = items.slice(attributes.currentIndex,items.length);
+			attributes.next = 'RepeatIntent,NumberIntent';
+			names = getNames(paginatedItems, attributes.currentIndex, attributes.transaction == 'ResolveAccount' );
+			responseText = names.join(',');
+			responseText += ',There are no more left to be listed, you can say ,repeat ,to repeat this list again or cancel ';
+		}
+		attributes.repeat = items;
+		erb.setOutputSpeech("PlainText", responseText, "");
+		erb.setReprompt("PlainText", "you can say next or continue or cancel", "");
+		erb.setAttributes(attributes);
+		erb.setEnd(false);
+		result = erb.getResponse();
+	}
+	
+	function getNames(items, startingPosition, isAccount){
+		var resultNames = [];
+		var itemName = isAccount?'account':'opportunity';
+		for(var indx=0; indx&lt;items.length; items++){			
+			resultNames.push('Say ' + (parseInt(indx)+ startingPosition + 1) + ' , for ' +  itemName + ' , ' + items[indx].name + ',');			
+		}
+		return resultNames;
+	}
+	
+})(content, attributes, new EchoResponseBuilder());]]&gt;&lt;/script&gt;&lt;sys_created_by&gt;anil.akula&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-09-26 10:37:30&lt;/sys_created_on&gt;&lt;sys_id&gt;305c8b560fc2ae04d7f7e64be1050ef3&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Chaitanya.Saragadam&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-09-27 20:58:41&lt;/sys_updated_on&gt;&lt;/x_snc_alexa_skill_utterance&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="AlexaCRMSkill">1e97ba7cdbdee2004a54f4bbaf961994</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>chaitanya.saragadam</sys_created_by>
+<sys_created_on>2016-10-04 03:30:25</sys_created_on>
+<sys_id>d297ba7cdbdee2004a54f4bbaf961995</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>chaitanya.saragadam</sys_updated_by>
+<sys_updated_on>2016-10-04 03:30:25</sys_updated_on>
+<table/>
+<target_name>ContinueIntent</target_name>
+<type>Intent</type>
+<update_domain/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value=""/>
+<category>customer</category>
+<comments/>
+<name>x_snc_alexa_skill_utterance_f20220f2db4aaa4004ea750aaf96192f</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_snc_alexa_skill_utterance"&gt;&lt;x_snc_alexa_skill_utterance action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;keyword&gt;DescriptionIntent&lt;/keyword&gt;&lt;name&gt;DescriptionIntent&lt;/name&gt;&lt;next/&gt;&lt;script&gt;&lt;![CDATA[(function(content, attributes, erb){
+	gs.info('DescriptionIntent1 --&gt; ' + attributes &amp;&amp; content.statement &amp;&amp; content.statement.value);
+	if(attributes &amp;&amp; content.statement &amp;&amp; content.statement.value){
+		gs.info('DescriptionIntent2 --&gt; ' + attributes.transaction + '::' + attributes.transaction == 'OpportunityCreation');
+		if(attributes.transaction == 'OpportunityCreation'){
+			var oppSysId = attributes.opportunity_sys_id;
+			var updateStatement = content.statement.value;
+			var oppurtunitiesService = new global.OppurtunitiesService();
+			gs.info('updateStatement --&gt; ' + content.statement.value);
+			var	status = oppurtunitiesService.updateNextSteps(oppSysId, updateStatement);
+			if(status) {
+				erb.setOutputSpeech("PlainText", "Next actions got updated");				
+				erb.setReprompt("PlainText", "Next actions got updated");
+			}else{
+				erb.setOutputSpeech("PlainText", "Unable to update the next steps. Please try again later.");
+				erb.setReprompt("PlainText", "Unable to update the next steps. Please try again later.");
+
+			}
+			erb.setAttributes(attributes);			
+		}
+	}
+	erb.setEnd(false);
+	result = erb.getResponse();
+})(content, attributes, new EchoResponseBuilder());]]&gt;&lt;/script&gt;&lt;sys_created_by&gt;Chaitanya.Saragadam&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-09-27 11:42:06&lt;/sys_created_on&gt;&lt;sys_id&gt;f20220f2db4aaa4004ea750aaf96192f&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Chaitanya.Saragadam&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-09-28 06:26:37&lt;/sys_updated_on&gt;&lt;/x_snc_alexa_skill_utterance&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="AlexaCRMSkill">1e97ba7cdbdee2004a54f4bbaf961994</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>chaitanya.saragadam</sys_created_by>
+<sys_created_on>2016-10-04 03:30:25</sys_created_on>
+<sys_id>d697ba7cdbdee2004a54f4bbaf961995</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>chaitanya.saragadam</sys_updated_by>
+<sys_updated_on>2016-10-04 03:30:25</sys_updated_on>
+<table/>
+<target_name>DescriptionIntent</target_name>
+<type>Intent</type>
+<update_domain/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_include_2f3d75fadb82ea4004ea750aaf96197c</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="DELETE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.OppurtunitiesService&lt;/api_name&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;OppurtunitiesService&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var OppurtunitiesService = Class.create();
+OppurtunitiesService.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+	getOppurtunitiesByAccountName: function(accountname){
+		gs.log('in getOppurtunitiesByAccountName method'+accountname,'hareesh');
+		var opp = new GlideRecord('sales_opportunity');
+		opp.addQuery('account.name','LIKE',accountname);
+		opp.orderByDesc('sys_updated_on');
+		opp.query();
+		var result = [];
+		while(opp.next()){
+			gs.log('in getOppurtunitiesByAccountName found recoreds'+opp.getRowCount(),'hareesh');
+			result.push( {name: opp.name+'',sysID: opp.sys_id+''});
+			
+		}
+		gs.log('result opps is'+JSON.stringify(result));
+		return result;
+	},
+	updateOpportunity: function(nextsteps,name){
+		var opp = new GlideRecord('sales_opportunity');
+		opp.addQuery('name',name);
+		opp.query();
+		while(opp.next()){
+			opp.u_next_steps_journaled = 'abc';
+			opp.setWorkflow(false);
+			opp.update();
+		}
+	},
+	
+	type: 'OppurtunitiesService'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Chaitanya.Saragadam&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-09-27 18:07:48&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;2f3d75fadb82ea4004ea750aaf96197c&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;OppurtunitiesService&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_2f3d75fadb82ea4004ea750aaf96197c&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Chaitanya.Saragadam&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-09-27 18:10:07&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="AlexaCRMSkill">1e97ba7cdbdee2004a54f4bbaf961994</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>chaitanya.saragadam</sys_created_by>
+<sys_created_on>2016-10-04 03:30:25</sys_created_on>
+<sys_id>de97ba7cdbdee2004a54f4bbaf961994</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>chaitanya.saragadam</sys_updated_by>
+<sys_updated_on>2016-10-04 03:30:25</sys_updated_on>
+<table/>
+<target_name>OppurtunitiesService</target_name>
+<type>Script Include</type>
+<update_domain/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

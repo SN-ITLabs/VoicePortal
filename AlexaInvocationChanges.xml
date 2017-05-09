@@ -1,0 +1,4502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2016-09-02 20:04:08">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>Alexa Changes</name>
+<origin_sys_id/>
+<release_date/>
+<remote_sys_id>5b143ed237e92e0054db43ba54990e70</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-09-02 20:04:08</sys_created_on>
+<sys_id>cf28697a37616e0054db43ba54990eb5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-09-02 20:04:08</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_page_c7943ed237e92e0054db43ba54990e7b</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_page"&gt;&lt;sys_ui_page action="INSERT_OR_UPDATE"&gt;&lt;category&gt;general&lt;/category&gt;&lt;client_script/&gt;&lt;description/&gt;&lt;direct&gt;true&lt;/direct&gt;&lt;endpoint/&gt;&lt;html&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null"&gt;
+	
+&lt;head&gt;
+  &lt;meta charset="UTF-8"/&gt;
+  &lt;meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=yes"/&gt;
+  &lt;title&gt;Alexa Voice Service demo&lt;/title&gt;
+  &lt;link rel="stylesheet" href="./index.css"/&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;h1&gt;Alexa Voice Service demo&lt;/h1&gt;
+	&lt;p&gt;Try asking thing like: "What time is it?" or "Tell me the news".&lt;/p&gt;
+	&lt;button id="login"&gt;Login&lt;/button&gt;
+	&lt;button id="logout" disabled="disabled"&gt;Logout&lt;/button&gt;
+	&lt;button id="startRecording" disabled="disabled"&gt;Start recording&lt;/button&gt;
+	&lt;button id="stopRecording" disabled="disabled"&gt;Stop recording&lt;/button&gt;
+	&lt;button id="stopAudio" disabled="disabled"&gt;Stop audio&lt;/button&gt;
+	&lt;button id="pauseAudio" disabled="disabled"&gt;Pause audio&lt;/button&gt;
+	&lt;button id="playAudio" disabled="disabled"&gt;Play/Resume audio&lt;/button&gt;
+	&lt;button id="replayAudio" disabled="disabled"&gt;Replay audio&lt;/button&gt;
+
+	&lt;ul id="log"&gt;&lt;/ul&gt;
+	&lt;ul id="audioLog"&gt;&lt;/ul&gt;	  
+	&lt;script src="/requireJS.js.jsdbx"&gt;&lt;/script&gt;	
+	&lt;script src="/qs.js.jsdbx"&gt;&lt;/script&gt;		
+	&lt;script src="/buffer.js.jsdbx"&gt;&lt;/script&gt;		
+	&lt;script src="/http-message-parser.js.jsdbx"&gt;&lt;/script&gt;
+	&lt;script src="/avs.AVSErrorCodes.js.jsdbx"&gt;&lt;/script&gt;
+	&lt;script src="/avs.Observable.js.jsdbx"&gt;&lt;/script&gt;
+	&lt;script src="/avs.Player.js.jsdbx"&gt;&lt;/script&gt;	
+	&lt;script src="/avs.utils.arrayBufferToAudioBuffer.js.jsdbx"&gt;&lt;/script&gt;	
+	&lt;script src="/avs.utils.arrayBufferToString.js.jsdbx"&gt;&lt;/script&gt;
+	&lt;script src="/avs.utils.writeUTFBytes.js.jsdbx"&gt;&lt;/script&gt;
+	&lt;script src="/avs.utils.mergeBuffers.js.jsdbx"&gt;&lt;/script&gt;
+	&lt;script src="/avs.utils.interleave.js.jsdbx"&gt;&lt;/script&gt;
+	&lt;script src="/avs.utils.downsampleBuffer.js.jsdbx"&gt;&lt;/script&gt;
+	&lt;script src="/avs.AVS.js.jsdbx"&gt;&lt;/script&gt;
+	&lt;script src="/avs.AVSEventListener.js.jsdbx"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/j:jelly&gt;]]&gt;&lt;/html&gt;&lt;name&gt;alexa1&lt;/name&gt;&lt;processing_script/&gt;&lt;sys_class_name&gt;sys_ui_page&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-09-01 12:21:08&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;c7943ed237e92e0054db43ba54990e7b&lt;/sys_id&gt;&lt;sys_mod_count&gt;30&lt;/sys_mod_count&gt;&lt;sys_name&gt;alexa1&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_page_c7943ed237e92e0054db43ba54990e7b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-09-02 20:02:19&lt;/sys_updated_on&gt;&lt;/sys_ui_page&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Alexa Changes">cf28697a37616e0054db43ba54990eb5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-09-02 20:04:08</sys_created_on>
+<sys_id>0328697a37616e0054db43ba54990eb6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-09-02 20:04:08</sys_updated_on>
+<table/>
+<target_name>alexa1</target_name>
+<type>UI Page</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_script_da95d0ea372d2e0054db43ba54990e61</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;avs.AVSEventListener.js&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var thisAVS = new AVS({
+	debug: true,
+	clientId: 'amzn1.application-oa2-client.8e0c5382537e4d1fbe0e0ef62baf864b',
+	deviceId: 'sndevops',
+	deviceSerialNumber: 'sndevops',
+	redirectUri: 'https://' + window.location.host + '/alexa1.do'
+});
+window.thisAVS = thisAVS;
+
+thisAVS.on(AVS.EventTypes.TOKEN_SET, function () {
+  loginBtn.disabled = true;
+  logoutBtn.disabled = false;
+  startRecording.disabled = false;
+  stopRecording.disabled = true;
+});
+
+thisAVS.on(AVS.EventTypes.RECORD_START, function () {
+  startRecording.disabled = true;
+  stopRecording.disabled = false;
+});
+
+thisAVS.on(AVS.EventTypes.RECORD_STOP, function () {
+  startRecording.disabled = false;
+  stopRecording.disabled = true;
+});
+
+thisAVS.on(AVS.EventTypes.LOGOUT, function () {
+  loginBtn.disabled = false;
+  logoutBtn.disabled = true;
+  startRecording.disabled = true;
+  stopRecording.disabled = true;
+});
+
+thisAVS.on(AVS.EventTypes.TOKEN_INVALID, function () {
+  thisAVS.logout().then(login);
+});
+
+thisAVS.on(AVS.EventTypes.LOG, log);
+thisAVS.on(AVS.EventTypes.ERROR, logError);
+
+thisAVS.player.on(AVS.Player.EventTypes.LOG, log);
+thisAVS.player.on(AVS.Player.EventTypes.ERROR, logError);
+
+thisAVS.player.on(AVS.Player.EventTypes.PLAY, function () {
+  playAudio.disabled = true;
+  replayAudio.disabled = true;
+  pauseAudio.disabled = false;
+  stopAudio.disabled = false;
+});
+
+thisAVS.player.on(AVS.Player.EventTypes.ENDED, function () {
+  playAudio.disabled = true;
+  replayAudio.disabled = false;
+  pauseAudio.disabled = true;
+  stopAudio.disabled = true;
+});
+
+thisAVS.player.on(AVS.Player.EventTypes.STOP, function () {
+  playAudio.disabled = true;
+  replayAudio.disabled = false;
+  pauseAudio.disabled = false;
+  stopAudio.disabled = false;
+});
+
+thisAVS.player.on(AVS.Player.EventTypes.PAUSE, function () {
+  playAudio.disabled = false;
+  replayAudio.disabled = false;
+  pauseAudio.disabled = true;
+  stopAudio.disabled = true;
+});
+
+thisAVS.player.on(AVS.Player.EventTypes.REPLAY, function () {
+  playAudio.disabled = true;
+  replayAudio.disabled = true;
+  pauseAudio.disabled = false;
+  stopAudio.disabled = false;
+});
+
+function log(message) {
+  logOutput.innerHTML = '&lt;li&gt;LOG: ' + message + '&lt;/li&gt;' + logOutput.innerHTML;
+}
+
+function logError(error) {
+  logOutput.innerHTML = '&lt;li&gt;ERROR: ' + error + '&lt;/li&gt;' + logOutput.innerHTML;
+}
+
+function logAudioBlob(blob, message) {
+  return new Promise(function (resolve, reject) {
+    var a = document.createElement('a');
+    var aDownload = document.createElement('a');
+    var url = window.URL.createObjectURL(blob);
+    var ext = blob.type.indexOf('mpeg') &gt; -1 ? 'mp3' : 'wav';
+    var filename = Date.now() + '.' + ext;
+    a.href = url;
+    a.target = '_blank';
+    aDownload.href = url;
+    a.textContent = filename;
+    aDownload.download = filename;
+    aDownload.textContent = 'download';
+
+    audioLogOutput.innerHTML = '&lt;li&gt;' + message + ': ' + a.outerHTML + ' ' + aDownload.outerHTML + '&lt;/li&gt;' + audioLogOutput.innerHTML;
+    resolve(blob);
+  });
+}
+
+var loginBtn = document.getElementById('login');
+var logoutBtn = document.getElementById('logout');
+var logOutput = document.getElementById('log');
+var audioLogOutput = document.getElementById('audioLog');
+var startRecording = document.getElementById('startRecording');
+var stopRecording = document.getElementById('stopRecording');
+var stopAudio = document.getElementById('stopAudio');
+var pauseAudio = document.getElementById('pauseAudio');
+var playAudio = document.getElementById('playAudio');
+var replayAudio = document.getElementById('replayAudio');
+
+
+thisAVS.getTokenFromUrl().then(function () {
+  return thisAVS.getToken();
+}).then(function (token) {
+  return localStorage.setItem('token', token);
+}).then(function () {
+  return thisAVS.requestMic();
+}).catch(function (ex) {
+	console.log(ex);
+  var cachedToken = localStorage.getItem('token');
+
+  if (cachedToken) {
+    thisAVS.setToken(cachedToken);
+    return thisAVS.requestMic();
+  }
+});
+
+loginBtn.addEventListener('click', login);
+
+function login(event) {
+  return thisAVS.login().then(function () {
+    return thisAVS.requestMic();
+  }).catch(function () {});
+
+  /*
+  // If using client secret
+  thisAVS.login({responseType: 'code'})
+  .then(() =&gt; thisAVS.requestMic())
+  .catch(() =&gt; {});
+  */
+}
+
+logoutBtn.addEventListener('click', logout);
+
+function logout() {
+  return thisAVS.logout().then(function () {
+    localStorage.removeItem('token');
+    window.location.hash = '';
+  });
+}
+
+startRecording.addEventListener('click', function () {
+  thisAVS.startRecording();
+});
+
+stopRecording.addEventListener('click', function () {
+  thisAVS.stopRecording().then(function (dataView) {
+    thisAVS.player.emptyQueue().then(function () {
+      return thisAVS.audioToBlob(dataView);
+    }).then(function (blob) {
+      return logAudioBlob(blob, 'VOICE');
+    }).then(function () {
+      return thisAVS.player.enqueue(dataView);
+    }).then(function () {
+      return thisAVS.player.play();
+    }).catch(function (error) {
+      console.error(error);
+    });
+
+    var ab = false;
+    //sendBlob(blob);
+    thisAVS.sendAudio(dataView).then(function (_ref) {
+      var xhr = _ref.xhr;
+      var response = _ref.response;
+
+
+      var promises = [];
+      var audioMap = {};
+      var directives = null;
+
+      if (response.multipart.length) {
+        (function () {
+          var findAudioFromContentId = function findAudioFromContentId(contentId) {
+            contentId = contentId.replace('cid:', '');
+            for (var key in audioMap) {
+              if (key.indexOf(contentId) &gt; -1) {
+                return audioMap[key];
+              }
+            }
+          };
+
+          response.multipart.forEach(function (multipart) {
+            var body = multipart.body;
+            if (multipart.headers &amp;&amp; multipart.headers['Content-Type'] === 'application/json') {
+              try {
+                body = JSON.parse(body);
+              } catch (error) {
+                console.error(error);
+              }
+
+              if (body &amp;&amp; body.messageBody &amp;&amp; body.messageBody.directives) {
+                directives = body.messageBody.directives;
+              }
+            } else if (multipart.headers['Content-Type'] === 'audio/mpeg') {
+              var start = multipart.meta.body.byteOffset.start;
+              var end = multipart.meta.body.byteOffset.end;
+
+              /**
+               * Not sure if bug in buffer module or in http message parser
+               * because it's joining arraybuffers so I have to this to
+               * seperate them out.
+               */
+              var slicedBody = xhr.response.slice(start, end);
+
+              //promises.push(thisAVS.player.enqueue(slicedBody));
+              audioMap[multipart.headers['Content-ID']] = slicedBody;
+            }
+          });
+
+          directives.forEach(function (directive) {
+            if (directive.namespace === 'SpeechSynthesizer') {
+              if (directive.name === 'speak') {
+                var contentId = directive.payload.audioContent;
+                var audio = findAudioFromContentId(contentId);
+                if (audio) {
+                  thisAVS.audioToBlob(audio).then(function (blob) {
+                    return logAudioBlob(blob, 'RESPONSE');
+                  });
+                  promises.push(thisAVS.player.enqueue(audio));
+                }
+              }
+            } else if (directive.namespace === 'AudioPlayer') {
+              if (directive.name === 'play') {
+                var streams = directive.payload.audioItem.streams;
+                streams.forEach(function (stream) {
+                  var streamUrl = stream.streamUrl;
+
+                  var audio = findAudioFromContentId(streamUrl);
+                  if (audio) {
+                    thisAVS.audioToBlob(audio).then(function (blob) {
+                      return logAudioBlob(blob, 'RESPONSE');
+                    });
+                    promises.push(thisAVS.player.enqueue(audio));
+                  } else if (streamUrl.indexOf('http') &gt; -1) {
+                    var _xhr = new XMLHttpRequest();
+                    var url = '/parse-m3u?url=' + streamUrl.replace(/!.*$/, '');
+                    _xhr.open('GET', url, true);
+                    _xhr.responseType = 'json';
+                    _xhr.onload = function (event) {
+                      var urls = event.currentTarget.response;
+
+                      urls.forEach(function (url) {
+                        thisAVS.player.enqueue(url);
+                      });
+                    };
+                    _xhr.send();
+                  }
+                });
+              } else if (directive.namespace === 'SpeechRecognizer') {
+                if (directive.name === 'listen') {
+                  var timeout = directive.payload.timeoutIntervalInMillis;
+                  // enable mic
+                }
+              }
+            }
+          });
+
+          if (promises.length) {
+            Promise.all(promises).then(function () {
+              thisAVS.player.playQueue();
+            });
+          }
+        })();
+      }
+    }).catch(function (error) {
+      console.error(error);
+    });
+  });
+});
+
+stopAudio.addEventListener('click', function (event) {
+  thisAVS.player.stop();
+});
+
+pauseAudio.addEventListener('click', function (event) {
+  thisAVS.player.pause();
+});
+
+playAudio.addEventListener('click', function (event) {
+  thisAVS.player.play();
+});
+
+replayAudio.addEventListener('click', function (event) {
+  thisAVS.player.replay();
+});
+
+function sendBlob(blob) {
+  var xhr = new XMLHttpRequest();
+  var fd = new FormData();
+
+  fd.append('fname', 'audio.wav');
+  fd.append('data', blob);
+
+  xhr.open('POST', 'http://localhost:5555/audio', true);
+  xhr.responseType = 'blob';
+
+  xhr.onload = function (event) {
+    if (xhr.status == 200) {
+      console.log(xhr.response);
+      //const responseBlob = new Blob([xhr.response], {type: 'audio/mp3'});
+    }
+  };
+
+  xhr.send(fd);
+}]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-09-01 19:25:07&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;da95d0ea372d2e0054db43ba54990e61&lt;/sys_id&gt;&lt;sys_mod_count&gt;11&lt;/sys_mod_count&gt;&lt;sys_name&gt;avs.AVSEventListener.js&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_da95d0ea372d2e0054db43ba54990e61&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-09-02 19:55:13&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Alexa Changes">cf28697a37616e0054db43ba54990eb5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-09-02 20:04:08</sys_created_on>
+<sys_id>0328697a37616e0054db43ba54990eb7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-09-02 20:04:08</sys_updated_on>
+<table/>
+<target_name>avs.AVSEventListener.js</target_name>
+<type>UI Script</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_script_3c52c7d637e92e0054db43ba54990e42</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;buffer.js&lt;/name&gt;&lt;script&gt;&lt;![CDATA[/** base64.js **/
+var lookup = []
+var revLookup = []
+var Arr = typeof Uint8Array !== 'undefined' ? Uint8Array : Array
+var base64 = {};
+base64.init = function() {
+  var code = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
+  for (var i = 0, len = code.length; i &lt; len; ++i) {
+    lookup[i] = code[i]
+    revLookup[code.charCodeAt(i)] = i
+  }
+
+  revLookup['-'.charCodeAt(0)] = 62
+  revLookup['_'.charCodeAt(0)] = 63
+}
+
+base64.init();
+
+base64.toByteArray = function(b64) {
+  var i, j, l, tmp, placeHolders, arr
+  var len = b64.length
+
+  if (len % 4 &gt; 0) {
+    throw new Error('Invalid string. Length must be a multiple of 4')
+  }
+
+  // the number of equal signs (place holders)
+  // if there are two placeholders, than the two characters before it
+  // represent one byte
+  // if there is only one, then the three characters before it represent 2 bytes
+  // this is just a cheap hack to not do indexOf twice
+  placeHolders = b64[len - 2] === '=' ? 2 : b64[len - 1] === '=' ? 1 : 0
+
+  // base64 is 4/3 + up to two characters of the original data
+  arr = new Arr(len * 3 / 4 - placeHolders)
+
+  // if there are placeholders, only get up to the last complete 4 chars
+  l = placeHolders &gt; 0 ? len - 4 : len
+
+  var L = 0
+
+  for (i = 0, j = 0; i &lt; l; i += 4, j += 3) {
+    tmp = (revLookup[b64.charCodeAt(i)] &lt;&lt; 18) | (revLookup[b64.charCodeAt(i + 1)] &lt;&lt; 12) | (revLookup[b64.charCodeAt(i + 2)] &lt;&lt; 6) | revLookup[b64.charCodeAt(i + 3)]
+    arr[L++] = (tmp &gt;&gt; 16) &amp; 0xFF
+    arr[L++] = (tmp &gt;&gt; 8) &amp; 0xFF
+    arr[L++] = tmp &amp; 0xFF
+  }
+
+  if (placeHolders === 2) {
+    tmp = (revLookup[b64.charCodeAt(i)] &lt;&lt; 2) | (revLookup[b64.charCodeAt(i + 1)] &gt;&gt; 4)
+    arr[L++] = tmp &amp; 0xFF
+  } else if (placeHolders === 1) {
+    tmp = (revLookup[b64.charCodeAt(i)] &lt;&lt; 10) | (revLookup[b64.charCodeAt(i + 1)] &lt;&lt; 4) | (revLookup[b64.charCodeAt(i + 2)] &gt;&gt; 2)
+    arr[L++] = (tmp &gt;&gt; 8) &amp; 0xFF
+    arr[L++] = tmp &amp; 0xFF
+  }
+
+  return arr
+}
+
+base64.tripletToBase64 = function(num) {
+  return lookup[num &gt;&gt; 18 &amp; 0x3F] + lookup[num &gt;&gt; 12 &amp; 0x3F] + lookup[num &gt;&gt; 6 &amp; 0x3F] + lookup[num &amp; 0x3F]
+}
+
+base64.encodeChunk= function(uint8, start, end) {
+  var tmp
+  var output = []
+  for (var i = start; i &lt; end; i += 3) {
+    tmp = (uint8[i] &lt;&lt; 16) + (uint8[i + 1] &lt;&lt; 8) + (uint8[i + 2])
+    output.push(tripletToBase64(tmp))
+  }
+  return output.join('')
+}
+
+base64.fromByteArray = function(uint8) {
+  var tmp
+  var len = uint8.length
+  var extraBytes = len % 3 // if we have 1 byte left, pad 2 bytes
+  var output = ''
+  var parts = []
+  var maxChunkLength = 16383 // must be multiple of 3
+
+  // go through the array every three bytes, we'll deal with trailing stuff later
+  for (var i = 0, len2 = len - extraBytes; i &lt; len2; i += maxChunkLength) {
+    parts.push(encodeChunk(uint8, i, (i + maxChunkLength) &gt; len2 ? len2 : (i + maxChunkLength)))
+  }
+
+  // pad the end with zeros, but make sure to not forget the extra bytes
+  if (extraBytes === 1) {
+    tmp = uint8[len - 1]
+    output += lookup[tmp &gt;&gt; 2]
+    output += lookup[(tmp &lt;&lt; 4) &amp; 0x3F]
+    output += '=='
+  } else if (extraBytes === 2) {
+    tmp = (uint8[len - 2] &lt;&lt; 8) + (uint8[len - 1])
+    output += lookup[tmp &gt;&gt; 10]
+    output += lookup[(tmp &gt;&gt; 4) &amp; 0x3F]
+    output += lookup[(tmp &lt;&lt; 2) &amp; 0x3F]
+    output += '='
+  }
+
+  parts.push(output)
+
+  return parts.join('')
+}
+
+/** ieee754.js **/
+ieee754 = {};
+ieee754.read = function (buffer, offset, isLE, mLen, nBytes) {
+  var e, m
+  var eLen = nBytes * 8 - mLen - 1
+  var eMax = (1 &lt;&lt; eLen) - 1
+  var eBias = eMax &gt;&gt; 1
+  var nBits = -7
+  var i = isLE ? (nBytes - 1) : 0
+  var d = isLE ? -1 : 1
+  var s = buffer[offset + i]
+
+  i += d
+
+  e = s &amp; ((1 &lt;&lt; (-nBits)) - 1)
+  s &gt;&gt;= (-nBits)
+  nBits += eLen
+  for (; nBits &gt; 0; e = e * 256 + buffer[offset + i], i += d, nBits -= 8) {}
+
+  m = e &amp; ((1 &lt;&lt; (-nBits)) - 1)
+  e &gt;&gt;= (-nBits)
+  nBits += mLen
+  for (; nBits &gt; 0; m = m * 256 + buffer[offset + i], i += d, nBits -= 8) {}
+
+  if (e === 0) {
+    e = 1 - eBias
+  } else if (e === eMax) {
+    return m ? NaN : ((s ? -1 : 1) * Infinity)
+  } else {
+    m = m + Math.pow(2, mLen)
+    e = e - eBias
+  }
+  return (s ? -1 : 1) * m * Math.pow(2, e - mLen)
+}
+
+ieee754.write = function (buffer, value, offset, isLE, mLen, nBytes) {
+  var e, m, c
+  var eLen = nBytes * 8 - mLen - 1
+  var eMax = (1 &lt;&lt; eLen) - 1
+  var eBias = eMax &gt;&gt; 1
+  var rt = (mLen === 23 ? Math.pow(2, -24) - Math.pow(2, -77) : 0)
+  var i = isLE ? 0 : (nBytes - 1)
+  var d = isLE ? 1 : -1
+  var s = value &lt; 0 || (value === 0 &amp;&amp; 1 / value &lt; 0) ? 1 : 0
+
+  value = Math.abs(value)
+
+  if (isNaN(value) || value === Infinity) {
+    m = isNaN(value) ? 1 : 0
+    e = eMax
+  } else {
+    e = Math.floor(Math.log(value) / Math.LN2)
+    if (value * (c = Math.pow(2, -e)) &lt; 1) {
+      e--
+      c *= 2
+    }
+    if (e + eBias &gt;= 1) {
+      value += rt / c
+    } else {
+      value += rt * Math.pow(2, 1 - eBias)
+    }
+    if (value * c &gt;= 2) {
+      e++
+      c /= 2
+    }
+
+    if (e + eBias &gt;= eMax) {
+      m = 0
+      e = eMax
+    } else if (e + eBias &gt;= 1) {
+      m = (value * c - 1) * Math.pow(2, mLen)
+      e = e + eBias
+    } else {
+      m = value * Math.pow(2, eBias - 1) * Math.pow(2, mLen)
+      e = 0
+    }
+  }
+
+  for (; mLen &gt;= 8; buffer[offset + i] = m &amp; 0xff, i += d, m /= 256, mLen -= 8) {}
+
+  e = (e &lt;&lt; mLen) | m
+  eLen += mLen
+  for (; eLen &gt; 0; buffer[offset + i] = e &amp; 0xff, i += d, e /= 256, eLen -= 8) {}
+
+  buffer[offset + i - d] |= s * 128
+}
+
+/** isarray.js **/
+
+var toString = {}.toString;
+
+isArray  = Array.isArray || function (arr) {
+  return toString.call(arr) == '[object Array]';
+};
+
+/** buffer.js **/
+
+INSPECT_MAX_BYTES = 50
+Buffer.poolSize = 8192 // not used by this implementation
+
+var rootParent = {}
+
+/**
+ * If `Buffer.TYPED_ARRAY_SUPPORT`:
+ *   === true    Use Uint8Array implementation (fastest)
+ *   === false   Use Object implementation (most compatible, even IE6)
+ *
+ * Browsers that support typed arrays are IE 10+, Firefox 4+, Chrome 7+, Safari 5.1+,
+ * Opera 11.6+, iOS 4.2+.
+ *
+ * Due to various browser bugs, sometimes the Object implementation will be used even
+ * when the browser supports typed arrays.
+ *
+ * Note:
+ *
+ *   - Firefox 4-29 lacks support for adding new properties to `Uint8Array` instances,
+ *     See: https://bugzilla.mozilla.org/show_bug.cgi?id=695438.
+ *
+ *   - Chrome 9-10 is missing the `TypedArray.prototype.subarray` function.
+ *
+ *   - IE10 has a broken `TypedArray.prototype.subarray` function which returns arrays of
+ *     incorrect length in some situations.
+
+ * We detect these buggy browsers and set `Buffer.TYPED_ARRAY_SUPPORT` to `false` so they
+ * get the Object implementation, which is slower but behaves correctly.
+ */
+Buffer.TYPED_ARRAY_SUPPORT = typedArraySupport()
+
+function typedArraySupport () {
+  try {
+    var arr = new Uint8Array(1)
+    arr.foo = function () { return 42 }
+    return arr.foo() === 42 &amp;&amp; // typed array instances can be augmented
+        typeof arr.subarray === 'function' &amp;&amp; // chrome 9-10 lack `subarray`
+        arr.subarray(1, 1).byteLength === 0 // ie10 has broken `subarray`
+  } catch (e) {
+    return false
+  }
+}
+
+function kMaxLength () {
+  return Buffer.TYPED_ARRAY_SUPPORT
+    ? 0x7fffffff
+    : 0x3fffffff
+}
+
+/**
+ * The Buffer constructor returns instances of `Uint8Array` that have their
+ * prototype changed to `Buffer.prototype`. Furthermore, `Buffer` is a subclass of
+ * `Uint8Array`, so the returned instances will have all the node `Buffer` methods
+ * and the `Uint8Array` methods. Square bracket notation works as expected -- it
+ * returns a single octet.
+ *
+ * The `Uint8Array` prototype remains unmodified.
+ */
+function Buffer (arg) {
+  if (!(this instanceof Buffer)) {
+    // Avoid going through an ArgumentsAdaptorTrampoline in the common case.
+    if (arguments.length &gt; 1) return new Buffer(arg, arguments[1])
+    return new Buffer(arg)
+  }
+
+  if (!Buffer.TYPED_ARRAY_SUPPORT) {
+    this.length = 0
+    this.parent = undefined
+  }
+
+  // Common case.
+  if (typeof arg === 'number') {
+    return fromNumber(this, arg)
+  }
+
+  // Slightly less common case.
+  if (typeof arg === 'string') {
+    return fromString(this, arg, arguments.length &gt; 1 ? arguments[1] : 'utf8')
+  }
+
+  // Unusual.
+  return fromObject(this, arg)
+}
+
+// TODO: Legacy, not needed anymore. Remove in next major version.
+Buffer._augment = function (arr) {
+  arr.__proto__ = Buffer.prototype
+  return arr
+}
+
+function fromNumber (that, length) {
+  that = allocate(that, length &lt; 0 ? 0 : checked(length) | 0)
+  if (!Buffer.TYPED_ARRAY_SUPPORT) {
+    for (var i = 0; i &lt; length; i++) {
+      that[i] = 0
+    }
+  }
+  return that
+}
+
+function fromString (that, string, encoding) {
+  if (typeof encoding !== 'string' || encoding === '') encoding = 'utf8'
+
+  // Assumption: byteLength() return value is always &lt; kMaxLength.
+  var length = byteLength(string, encoding) | 0
+  that = allocate(that, length)
+
+  that.write(string, encoding)
+  return that
+}
+
+function fromObject (that, object) {
+  if (Buffer.isBuffer(object)) return fromBuffer(that, object)
+
+  if (isArray(object)) return fromArray(that, object)
+
+  if (object == null) {
+    throw new TypeError('must start with number, buffer, array or string')
+  }
+
+  if (typeof ArrayBuffer !== 'undefined') {
+    if (object.buffer instanceof ArrayBuffer) {
+      return fromTypedArray(that, object)
+    }
+    if (object instanceof ArrayBuffer) {
+      return fromArrayBuffer(that, object)
+    }
+  }
+
+  if (object.length) return fromArrayLike(that, object)
+
+  return fromJsonObject(that, object)
+}
+
+function fromBuffer (that, buffer) {
+  var length = checked(buffer.length) | 0
+  that = allocate(that, length)
+  buffer.copy(that, 0, 0, length)
+  return that
+}
+
+function fromArray (that, array) {
+  var length = checked(array.length) | 0
+  that = allocate(that, length)
+  for (var i = 0; i &lt; length; i += 1) {
+    that[i] = array[i] &amp; 255
+  }
+  return that
+}
+
+// Duplicate of fromArray() to keep fromArray() monomorphic.
+function fromTypedArray (that, array) {
+  var length = checked(array.length) | 0
+  that = allocate(that, length)
+  // Truncating the elements is probably not what people expect from typed
+  // arrays with BYTES_PER_ELEMENT &gt; 1 but it's compatible with the behavior
+  // of the old Buffer constructor.
+  for (var i = 0; i &lt; length; i += 1) {
+    that[i] = array[i] &amp; 255
+  }
+  return that
+}
+
+function fromArrayBuffer (that, array) {
+  array.byteLength // this throws if `array` is not a valid ArrayBuffer
+
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    // Return an augmented `Uint8Array` instance, for best performance
+    that = new Uint8Array(array)
+    that.__proto__ = Buffer.prototype
+  } else {
+    // Fallback: Return an object instance of the Buffer class
+    that = fromTypedArray(that, new Uint8Array(array))
+  }
+  return that
+}
+
+function fromArrayLike (that, array) {
+  var length = checked(array.length) | 0
+  that = allocate(that, length)
+  for (var i = 0; i &lt; length; i += 1) {
+    that[i] = array[i] &amp; 255
+  }
+  return that
+}
+
+// Deserialize { type: 'Buffer', data: [1,2,3,...] } into a Buffer object.
+// Returns a zero-length buffer for inputs that don't conform to the spec.
+function fromJsonObject (that, object) {
+  var array
+  var length = 0
+
+  if (object.type === 'Buffer' &amp;&amp; isArray(object.data)) {
+    array = object.data
+    length = checked(array.length) | 0
+  }
+  that = allocate(that, length)
+
+  for (var i = 0; i &lt; length; i += 1) {
+    that[i] = array[i] &amp; 255
+  }
+  return that
+}
+
+if (Buffer.TYPED_ARRAY_SUPPORT) {
+  Buffer.prototype.__proto__ = Uint8Array.prototype
+  Buffer.__proto__ = Uint8Array
+  if (typeof Symbol !== 'undefined' &amp;&amp; Symbol.species &amp;&amp;
+      Buffer[Symbol.species] === Buffer) {
+    // Fix subarray() in ES2016. See: https://github.com/feross/buffer/pull/97
+    Object.defineProperty(Buffer, Symbol.species, {
+      value: null,
+      configurable: true
+    })
+  }
+} else {
+  // pre-set for values that may exist in the future
+  Buffer.prototype.length = undefined
+  Buffer.prototype.parent = undefined
+}
+
+function allocate (that, length) {
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    // Return an augmented `Uint8Array` instance, for best performance
+    that = new Uint8Array(length)
+    that.__proto__ = Buffer.prototype
+  } else {
+    // Fallback: Return an object instance of the Buffer class
+    that.length = length
+  }
+
+  var fromPool = length !== 0 &amp;&amp; length &lt;= Buffer.poolSize &gt;&gt;&gt; 1
+  if (fromPool) that.parent = rootParent
+
+  return that
+}
+
+function checked (length) {
+  // Note: cannot use `length &lt; kMaxLength` here because that fails when
+  // length is NaN (which is otherwise coerced to zero.)
+  if (length &gt;= kMaxLength()) {
+    throw new RangeError('Attempt to allocate Buffer larger than maximum ' +
+                         'size: 0x' + kMaxLength().toString(16) + ' bytes')
+  }
+  return length | 0
+}
+
+function SlowBuffer (subject, encoding) {
+  if (!(this instanceof SlowBuffer)) return new SlowBuffer(subject, encoding)
+
+  var buf = new Buffer(subject, encoding)
+  delete buf.parent
+  return buf
+}
+
+Buffer.isBuffer = function isBuffer (b) {
+  return !!(b != null &amp;&amp; b._isBuffer)
+}
+
+Buffer.compare = function compare (a, b) {
+  if (!Buffer.isBuffer(a) || !Buffer.isBuffer(b)) {
+    throw new TypeError('Arguments must be Buffers')
+  }
+
+  if (a === b) return 0
+
+  var x = a.length
+  var y = b.length
+
+  for (var i = 0, len = Math.min(x, y); i &lt; len; ++i) {
+    if (a[i] !== b[i]) {
+      x = a[i]
+      y = b[i]
+      break
+    }
+  }
+
+  if (x &lt; y) return -1
+  if (y &lt; x) return 1
+  return 0
+}
+
+Buffer.isEncoding = function isEncoding (encoding) {
+  switch (String(encoding).toLowerCase()) {
+    case 'hex':
+    case 'utf8':
+    case 'utf-8':
+    case 'ascii':
+    case 'binary':
+    case 'base64':
+    case 'raw':
+    case 'ucs2':
+    case 'ucs-2':
+    case 'utf16le':
+    case 'utf-16le':
+      return true
+    default:
+      return false
+  }
+}
+
+Buffer.concat = function concat (list, length) {
+  if (!isArray(list)) throw new TypeError('list argument must be an Array of Buffers.')
+
+  if (list.length === 0) {
+    return new Buffer(0)
+  }
+
+  var i
+  if (length === undefined) {
+    length = 0
+    for (i = 0; i &lt; list.length; i++) {
+      length += list[i].length
+    }
+  }
+
+  var buf = new Buffer(length)
+  var pos = 0
+  for (i = 0; i &lt; list.length; i++) {
+    var item = list[i]
+    item.copy(buf, pos)
+    pos += item.length
+  }
+  return buf
+}
+
+function byteLength (string, encoding) {
+  if (typeof string !== 'string') string = '' + string
+
+  var len = string.length
+  if (len === 0) return 0
+
+  // Use a for loop to avoid recursion
+  var loweredCase = false
+  for (;;) {
+    switch (encoding) {
+      case 'ascii':
+      case 'binary':
+      // Deprecated
+      case 'raw':
+      case 'raws':
+        return len
+      case 'utf8':
+      case 'utf-8':
+        return utf8ToBytes(string).length
+      case 'ucs2':
+      case 'ucs-2':
+      case 'utf16le':
+      case 'utf-16le':
+        return len * 2
+      case 'hex':
+        return len &gt;&gt;&gt; 1
+      case 'base64':
+        return base64ToBytes(string).length
+      default:
+        if (loweredCase) return utf8ToBytes(string).length // assume utf8
+        encoding = ('' + encoding).toLowerCase()
+        loweredCase = true
+    }
+  }
+}
+Buffer.byteLength = byteLength
+
+function slowToString (encoding, start, end) {
+  var loweredCase = false
+
+  start = start | 0
+  end = end === undefined || end === Infinity ? this.length : end | 0
+
+  if (!encoding) encoding = 'utf8'
+  if (start &lt; 0) start = 0
+  if (end &gt; this.length) end = this.length
+  if (end &lt;= start) return ''
+
+  while (true) {
+    switch (encoding) {
+      case 'hex':
+        return hexSlice(this, start, end)
+
+      case 'utf8':
+      case 'utf-8':
+        return utf8Slice(this, start, end)
+
+      case 'ascii':
+        return asciiSlice(this, start, end)
+
+      case 'binary':
+        return binarySlice(this, start, end)
+
+      case 'base64':
+        return base64Slice(this, start, end)
+
+      case 'ucs2':
+      case 'ucs-2':
+      case 'utf16le':
+      case 'utf-16le':
+        return utf16leSlice(this, start, end)
+
+      default:
+        if (loweredCase) throw new TypeError('Unknown encoding: ' + encoding)
+        encoding = (encoding + '').toLowerCase()
+        loweredCase = true
+    }
+  }
+}
+
+// The property is used by `Buffer.isBuffer` and `is-buffer` (in Safari 5-7) to detect
+// Buffer instances.
+Buffer.prototype._isBuffer = true
+
+Buffer.prototype.toString = function toString () {
+  var length = this.length | 0
+  if (length === 0) return ''
+  if (arguments.length === 0) return utf8Slice(this, 0, length)
+  return slowToString.apply(this, arguments)
+}
+
+Buffer.prototype.equals = function equals (b) {
+  if (!Buffer.isBuffer(b)) throw new TypeError('Argument must be a Buffer')
+  if (this === b) return true
+  return Buffer.compare(this, b) === 0
+}
+
+Buffer.prototype.inspect = function inspect () {
+  var str = ''
+  var max = INSPECT_MAX_BYTES
+  if (this.length &gt; 0) {
+    str = this.toString('hex', 0, max).match(/.{2}/g).join(' ')
+    if (this.length &gt; max) str += ' ... '
+  }
+  return '&lt;Buffer ' + str + '&gt;'
+}
+
+Buffer.prototype.compare = function compare (b) {
+  if (!Buffer.isBuffer(b)) throw new TypeError('Argument must be a Buffer')
+  return Buffer.compare(this, b)
+}
+
+Buffer.prototype.indexOf = function indexOf (val, byteOffset) {
+  if (byteOffset &gt; 0x7fffffff) byteOffset = 0x7fffffff
+  else if (byteOffset &lt; -0x80000000) byteOffset = -0x80000000
+  byteOffset &gt;&gt;= 0
+
+  if (this.length === 0) return -1
+  if (byteOffset &gt;= this.length) return -1
+
+  // Negative offsets start from the end of the buffer
+  if (byteOffset &lt; 0) byteOffset = Math.max(this.length + byteOffset, 0)
+
+  if (typeof val === 'string') {
+    if (val.length === 0) return -1 // special case: looking for empty string always fails
+    return String.prototype.indexOf.call(this, val, byteOffset)
+  }
+  if (Buffer.isBuffer(val)) {
+    return arrayIndexOf(this, val, byteOffset)
+  }
+  if (typeof val === 'number') {
+    if (Buffer.TYPED_ARRAY_SUPPORT &amp;&amp; Uint8Array.prototype.indexOf === 'function') {
+      return Uint8Array.prototype.indexOf.call(this, val, byteOffset)
+    }
+    return arrayIndexOf(this, [ val ], byteOffset)
+  }
+
+  function arrayIndexOf (arr, val, byteOffset) {
+    var foundIndex = -1
+    for (var i = 0; byteOffset + i &lt; arr.length; i++) {
+      if (arr[byteOffset + i] === val[foundIndex === -1 ? 0 : i - foundIndex]) {
+        if (foundIndex === -1) foundIndex = i
+        if (i - foundIndex + 1 === val.length) return byteOffset + foundIndex
+      } else {
+        foundIndex = -1
+      }
+    }
+    return -1
+  }
+
+  throw new TypeError('val must be string, number or Buffer')
+}
+
+function hexWrite (buf, string, offset, length) {
+  offset = Number(offset) || 0
+  var remaining = buf.length - offset
+  if (!length) {
+    length = remaining
+  } else {
+    length = Number(length)
+    if (length &gt; remaining) {
+      length = remaining
+    }
+  }
+
+  // must be an even number of digits
+  var strLen = string.length
+  if (strLen % 2 !== 0) throw new Error('Invalid hex string')
+
+  if (length &gt; strLen / 2) {
+    length = strLen / 2
+  }
+  for (var i = 0; i &lt; length; i++) {
+    var parsed = parseInt(string.substr(i * 2, 2), 16)
+    if (isNaN(parsed)) throw new Error('Invalid hex string')
+    buf[offset + i] = parsed
+  }
+  return i
+}
+
+function utf8Write (buf, string, offset, length) {
+  return blitBuffer(utf8ToBytes(string, buf.length - offset), buf, offset, length)
+}
+
+function asciiWrite (buf, string, offset, length) {
+  return blitBuffer(asciiToBytes(string), buf, offset, length)
+}
+
+function binaryWrite (buf, string, offset, length) {
+  return asciiWrite(buf, string, offset, length)
+}
+
+function base64Write (buf, string, offset, length) {
+  return blitBuffer(base64ToBytes(string), buf, offset, length)
+}
+
+function ucs2Write (buf, string, offset, length) {
+  return blitBuffer(utf16leToBytes(string, buf.length - offset), buf, offset, length)
+}
+
+Buffer.prototype.write = function write (string, offset, length, encoding) {
+  // Buffer#write(string)
+  if (offset === undefined) {
+    encoding = 'utf8'
+    length = this.length
+    offset = 0
+  // Buffer#write(string, encoding)
+  } else if (length === undefined &amp;&amp; typeof offset === 'string') {
+    encoding = offset
+    length = this.length
+    offset = 0
+  // Buffer#write(string, offset[, length][, encoding])
+  } else if (isFinite(offset)) {
+    offset = offset | 0
+    if (isFinite(length)) {
+      length = length | 0
+      if (encoding === undefined) encoding = 'utf8'
+    } else {
+      encoding = length
+      length = undefined
+    }
+  // legacy write(string, encoding, offset, length) - remove in v0.13
+  } else {
+    var swap = encoding
+    encoding = offset
+    offset = length | 0
+    length = swap
+  }
+
+  var remaining = this.length - offset
+  if (length === undefined || length &gt; remaining) length = remaining
+
+  if ((string.length &gt; 0 &amp;&amp; (length &lt; 0 || offset &lt; 0)) || offset &gt; this.length) {
+    throw new RangeError('attempt to write outside buffer bounds')
+  }
+
+  if (!encoding) encoding = 'utf8'
+
+  var loweredCase = false
+  for (;;) {
+    switch (encoding) {
+      case 'hex':
+        return hexWrite(this, string, offset, length)
+
+      case 'utf8':
+      case 'utf-8':
+        return utf8Write(this, string, offset, length)
+
+      case 'ascii':
+        return asciiWrite(this, string, offset, length)
+
+      case 'binary':
+        return binaryWrite(this, string, offset, length)
+
+      case 'base64':
+        // Warning: maxLength not taken into account in base64Write
+        return base64Write(this, string, offset, length)
+
+      case 'ucs2':
+      case 'ucs-2':
+      case 'utf16le':
+      case 'utf-16le':
+        return ucs2Write(this, string, offset, length)
+
+      default:
+        if (loweredCase) throw new TypeError('Unknown encoding: ' + encoding)
+        encoding = ('' + encoding).toLowerCase()
+        loweredCase = true
+    }
+  }
+}
+
+Buffer.prototype.toJSON = function toJSON () {
+  return {
+    type: 'Buffer',
+    data: Array.prototype.slice.call(this._arr || this, 0)
+  }
+}
+
+function base64Slice (buf, start, end) {
+  if (start === 0 &amp;&amp; end === buf.length) {
+    return base64.fromByteArray(buf)
+  } else {
+    return base64.fromByteArray(buf.slice(start, end))
+  }
+}
+
+function utf8Slice (buf, start, end) {
+  end = Math.min(buf.length, end)
+  var res = []
+
+  var i = start
+  while (i &lt; end) {
+    var firstByte = buf[i]
+    var codePoint = null
+    var bytesPerSequence = (firstByte &gt; 0xEF) ? 4
+      : (firstByte &gt; 0xDF) ? 3
+      : (firstByte &gt; 0xBF) ? 2
+      : 1
+
+    if (i + bytesPerSequence &lt;= end) {
+      var secondByte, thirdByte, fourthByte, tempCodePoint
+
+      switch (bytesPerSequence) {
+        case 1:
+          if (firstByte &lt; 0x80) {
+            codePoint = firstByte
+          }
+          break
+        case 2:
+          secondByte = buf[i + 1]
+          if ((secondByte &amp; 0xC0) === 0x80) {
+            tempCodePoint = (firstByte &amp; 0x1F) &lt;&lt; 0x6 | (secondByte &amp; 0x3F)
+            if (tempCodePoint &gt; 0x7F) {
+              codePoint = tempCodePoint
+            }
+          }
+          break
+        case 3:
+          secondByte = buf[i + 1]
+          thirdByte = buf[i + 2]
+          if ((secondByte &amp; 0xC0) === 0x80 &amp;&amp; (thirdByte &amp; 0xC0) === 0x80) {
+            tempCodePoint = (firstByte &amp; 0xF) &lt;&lt; 0xC | (secondByte &amp; 0x3F) &lt;&lt; 0x6 | (thirdByte &amp; 0x3F)
+            if (tempCodePoint &gt; 0x7FF &amp;&amp; (tempCodePoint &lt; 0xD800 || tempCodePoint &gt; 0xDFFF)) {
+              codePoint = tempCodePoint
+            }
+          }
+          break
+        case 4:
+          secondByte = buf[i + 1]
+          thirdByte = buf[i + 2]
+          fourthByte = buf[i + 3]
+          if ((secondByte &amp; 0xC0) === 0x80 &amp;&amp; (thirdByte &amp; 0xC0) === 0x80 &amp;&amp; (fourthByte &amp; 0xC0) === 0x80) {
+            tempCodePoint = (firstByte &amp; 0xF) &lt;&lt; 0x12 | (secondByte &amp; 0x3F) &lt;&lt; 0xC | (thirdByte &amp; 0x3F) &lt;&lt; 0x6 | (fourthByte &amp; 0x3F)
+            if (tempCodePoint &gt; 0xFFFF &amp;&amp; tempCodePoint &lt; 0x110000) {
+              codePoint = tempCodePoint
+            }
+          }
+      }
+    }
+
+    if (codePoint === null) {
+      // we did not generate a valid codePoint so insert a
+      // replacement char (U+FFFD) and advance only 1 byte
+      codePoint = 0xFFFD
+      bytesPerSequence = 1
+    } else if (codePoint &gt; 0xFFFF) {
+      // encode to utf16 (surrogate pair dance)
+      codePoint -= 0x10000
+      res.push(codePoint &gt;&gt;&gt; 10 &amp; 0x3FF | 0xD800)
+      codePoint = 0xDC00 | codePoint &amp; 0x3FF
+    }
+
+    res.push(codePoint)
+    i += bytesPerSequence
+  }
+
+  return decodeCodePointsArray(res)
+}
+
+// Based on http://stackoverflow.com/a/22747272/680742, the browser with
+// the lowest limit is Chrome, with 0x10000 args.
+// We go 1 magnitude less, for safety
+var MAX_ARGUMENTS_LENGTH = 0x1000
+
+function decodeCodePointsArray (codePoints) {
+  var len = codePoints.length
+  if (len &lt;= MAX_ARGUMENTS_LENGTH) {
+    return String.fromCharCode.apply(String, codePoints) // avoid extra slice()
+  }
+
+  // Decode in chunks to avoid "call stack size exceeded".
+  var res = ''
+  var i = 0
+  while (i &lt; len) {
+    res += String.fromCharCode.apply(
+      String,
+      codePoints.slice(i, i += MAX_ARGUMENTS_LENGTH)
+    )
+  }
+  return res
+}
+
+function asciiSlice (buf, start, end) {
+  var ret = ''
+  end = Math.min(buf.length, end)
+
+  for (var i = start; i &lt; end; i++) {
+    ret += String.fromCharCode(buf[i] &amp; 0x7F)
+  }
+  return ret
+}
+
+function binarySlice (buf, start, end) {
+  var ret = ''
+  end = Math.min(buf.length, end)
+
+  for (var i = start; i &lt; end; i++) {
+    ret += String.fromCharCode(buf[i])
+  }
+  return ret
+}
+
+function hexSlice (buf, start, end) {
+  var len = buf.length
+
+  if (!start || start &lt; 0) start = 0
+  if (!end || end &lt; 0 || end &gt; len) end = len
+
+  var out = ''
+  for (var i = start; i &lt; end; i++) {
+    out += toHex(buf[i])
+  }
+  return out
+}
+
+function utf16leSlice (buf, start, end) {
+  var bytes = buf.slice(start, end)
+  var res = ''
+  for (var i = 0; i &lt; bytes.length; i += 2) {
+    res += String.fromCharCode(bytes[i] + bytes[i + 1] * 256)
+  }
+  return res
+}
+
+Buffer.prototype.slice = function slice (start, end) {
+  var len = this.length
+  start = ~~start
+  end = end === undefined ? len : ~~end
+
+  if (start &lt; 0) {
+    start += len
+    if (start &lt; 0) start = 0
+  } else if (start &gt; len) {
+    start = len
+  }
+
+  if (end &lt; 0) {
+    end += len
+    if (end &lt; 0) end = 0
+  } else if (end &gt; len) {
+    end = len
+  }
+
+  if (end &lt; start) end = start
+
+  var newBuf
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    newBuf = this.subarray(start, end)
+    newBuf.__proto__ = Buffer.prototype
+  } else {
+    var sliceLen = end - start
+    newBuf = new Buffer(sliceLen, undefined)
+    for (var i = 0; i &lt; sliceLen; i++) {
+      newBuf[i] = this[i + start]
+    }
+  }
+
+  if (newBuf.length) newBuf.parent = this.parent || this
+
+  return newBuf
+}
+
+/*
+ * Need to make sure that buffer isn't trying to write out of bounds.
+ */
+function checkOffset (offset, ext, length) {
+  if ((offset % 1) !== 0 || offset &lt; 0) throw new RangeError('offset is not uint')
+  if (offset + ext &gt; length) throw new RangeError('Trying to access beyond buffer length')
+}
+
+Buffer.prototype.readUIntLE = function readUIntLE (offset, byteLength, noAssert) {
+  offset = offset | 0
+  byteLength = byteLength | 0
+  if (!noAssert) checkOffset(offset, byteLength, this.length)
+
+  var val = this[offset]
+  var mul = 1
+  var i = 0
+  while (++i &lt; byteLength &amp;&amp; (mul *= 0x100)) {
+    val += this[offset + i] * mul
+  }
+
+  return val
+}
+
+Buffer.prototype.readUIntBE = function readUIntBE (offset, byteLength, noAssert) {
+  offset = offset | 0
+  byteLength = byteLength | 0
+  if (!noAssert) {
+    checkOffset(offset, byteLength, this.length)
+  }
+
+  var val = this[offset + --byteLength]
+  var mul = 1
+  while (byteLength &gt; 0 &amp;&amp; (mul *= 0x100)) {
+    val += this[offset + --byteLength] * mul
+  }
+
+  return val
+}
+
+Buffer.prototype.readUInt8 = function readUInt8 (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 1, this.length)
+  return this[offset]
+}
+
+Buffer.prototype.readUInt16LE = function readUInt16LE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 2, this.length)
+  return this[offset] | (this[offset + 1] &lt;&lt; 8)
+}
+
+Buffer.prototype.readUInt16BE = function readUInt16BE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 2, this.length)
+  return (this[offset] &lt;&lt; 8) | this[offset + 1]
+}
+
+Buffer.prototype.readUInt32LE = function readUInt32LE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 4, this.length)
+
+  return ((this[offset]) |
+      (this[offset + 1] &lt;&lt; 8) |
+      (this[offset + 2] &lt;&lt; 16)) +
+      (this[offset + 3] * 0x1000000)
+}
+
+Buffer.prototype.readUInt32BE = function readUInt32BE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 4, this.length)
+
+  return (this[offset] * 0x1000000) +
+    ((this[offset + 1] &lt;&lt; 16) |
+    (this[offset + 2] &lt;&lt; 8) |
+    this[offset + 3])
+}
+
+Buffer.prototype.readIntLE = function readIntLE (offset, byteLength, noAssert) {
+  offset = offset | 0
+  byteLength = byteLength | 0
+  if (!noAssert) checkOffset(offset, byteLength, this.length)
+
+  var val = this[offset]
+  var mul = 1
+  var i = 0
+  while (++i &lt; byteLength &amp;&amp; (mul *= 0x100)) {
+    val += this[offset + i] * mul
+  }
+  mul *= 0x80
+
+  if (val &gt;= mul) val -= Math.pow(2, 8 * byteLength)
+
+  return val
+}
+
+Buffer.prototype.readIntBE = function readIntBE (offset, byteLength, noAssert) {
+  offset = offset | 0
+  byteLength = byteLength | 0
+  if (!noAssert) checkOffset(offset, byteLength, this.length)
+
+  var i = byteLength
+  var mul = 1
+  var val = this[offset + --i]
+  while (i &gt; 0 &amp;&amp; (mul *= 0x100)) {
+    val += this[offset + --i] * mul
+  }
+  mul *= 0x80
+
+  if (val &gt;= mul) val -= Math.pow(2, 8 * byteLength)
+
+  return val
+}
+
+Buffer.prototype.readInt8 = function readInt8 (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 1, this.length)
+  if (!(this[offset] &amp; 0x80)) return (this[offset])
+  return ((0xff - this[offset] + 1) * -1)
+}
+
+Buffer.prototype.readInt16LE = function readInt16LE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 2, this.length)
+  var val = this[offset] | (this[offset + 1] &lt;&lt; 8)
+  return (val &amp; 0x8000) ? val | 0xFFFF0000 : val
+}
+
+Buffer.prototype.readInt16BE = function readInt16BE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 2, this.length)
+  var val = this[offset + 1] | (this[offset] &lt;&lt; 8)
+  return (val &amp; 0x8000) ? val | 0xFFFF0000 : val
+}
+
+Buffer.prototype.readInt32LE = function readInt32LE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 4, this.length)
+
+  return (this[offset]) |
+    (this[offset + 1] &lt;&lt; 8) |
+    (this[offset + 2] &lt;&lt; 16) |
+    (this[offset + 3] &lt;&lt; 24)
+}
+
+Buffer.prototype.readInt32BE = function readInt32BE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 4, this.length)
+
+  return (this[offset] &lt;&lt; 24) |
+    (this[offset + 1] &lt;&lt; 16) |
+    (this[offset + 2] &lt;&lt; 8) |
+    (this[offset + 3])
+}
+
+Buffer.prototype.readFloatLE = function readFloatLE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 4, this.length)
+  return ieee754.read(this, offset, true, 23, 4)
+}
+
+Buffer.prototype.readFloatBE = function readFloatBE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 4, this.length)
+  return ieee754.read(this, offset, false, 23, 4)
+}
+
+Buffer.prototype.readDoubleLE = function readDoubleLE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 8, this.length)
+  return ieee754.read(this, offset, true, 52, 8)
+}
+
+Buffer.prototype.readDoubleBE = function readDoubleBE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 8, this.length)
+  return ieee754.read(this, offset, false, 52, 8)
+}
+
+function checkInt (buf, value, offset, ext, max, min) {
+  if (!Buffer.isBuffer(buf)) throw new TypeError('buffer must be a Buffer instance')
+  if (value &gt; max || value &lt; min) throw new RangeError('value is out of bounds')
+  if (offset + ext &gt; buf.length) throw new RangeError('index out of range')
+}
+
+Buffer.prototype.writeUIntLE = function writeUIntLE (value, offset, byteLength, noAssert) {
+  value = +value
+  offset = offset | 0
+  byteLength = byteLength | 0
+  if (!noAssert) checkInt(this, value, offset, byteLength, Math.pow(2, 8 * byteLength), 0)
+
+  var mul = 1
+  var i = 0
+  this[offset] = value &amp; 0xFF
+  while (++i &lt; byteLength &amp;&amp; (mul *= 0x100)) {
+    this[offset + i] = (value / mul) &amp; 0xFF
+  }
+
+  return offset + byteLength
+}
+
+Buffer.prototype.writeUIntBE = function writeUIntBE (value, offset, byteLength, noAssert) {
+  value = +value
+  offset = offset | 0
+  byteLength = byteLength | 0
+  if (!noAssert) checkInt(this, value, offset, byteLength, Math.pow(2, 8 * byteLength), 0)
+
+  var i = byteLength - 1
+  var mul = 1
+  this[offset + i] = value &amp; 0xFF
+  while (--i &gt;= 0 &amp;&amp; (mul *= 0x100)) {
+    this[offset + i] = (value / mul) &amp; 0xFF
+  }
+
+  return offset + byteLength
+}
+
+Buffer.prototype.writeUInt8 = function writeUInt8 (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 1, 0xff, 0)
+  if (!Buffer.TYPED_ARRAY_SUPPORT) value = Math.floor(value)
+  this[offset] = (value &amp; 0xff)
+  return offset + 1
+}
+
+function objectWriteUInt16 (buf, value, offset, littleEndian) {
+  if (value &lt; 0) value = 0xffff + value + 1
+  for (var i = 0, j = Math.min(buf.length - offset, 2); i &lt; j; i++) {
+    buf[offset + i] = (value &amp; (0xff &lt;&lt; (8 * (littleEndian ? i : 1 - i)))) &gt;&gt;&gt;
+      (littleEndian ? i : 1 - i) * 8
+  }
+}
+
+Buffer.prototype.writeUInt16LE = function writeUInt16LE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 2, 0xffff, 0)
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset] = (value &amp; 0xff)
+    this[offset + 1] = (value &gt;&gt;&gt; 8)
+  } else {
+    objectWriteUInt16(this, value, offset, true)
+  }
+  return offset + 2
+}
+
+Buffer.prototype.writeUInt16BE = function writeUInt16BE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 2, 0xffff, 0)
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset] = (value &gt;&gt;&gt; 8)
+    this[offset + 1] = (value &amp; 0xff)
+  } else {
+    objectWriteUInt16(this, value, offset, false)
+  }
+  return offset + 2
+}
+
+function objectWriteUInt32 (buf, value, offset, littleEndian) {
+  if (value &lt; 0) value = 0xffffffff + value + 1
+  for (var i = 0, j = Math.min(buf.length - offset, 4); i &lt; j; i++) {
+    buf[offset + i] = (value &gt;&gt;&gt; (littleEndian ? i : 3 - i) * 8) &amp; 0xff
+  }
+}
+
+Buffer.prototype.writeUInt32LE = function writeUInt32LE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 4, 0xffffffff, 0)
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset + 3] = (value &gt;&gt;&gt; 24)
+    this[offset + 2] = (value &gt;&gt;&gt; 16)
+    this[offset + 1] = (value &gt;&gt;&gt; 8)
+    this[offset] = (value &amp; 0xff)
+  } else {
+    objectWriteUInt32(this, value, offset, true)
+  }
+  return offset + 4
+}
+
+Buffer.prototype.writeUInt32BE = function writeUInt32BE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 4, 0xffffffff, 0)
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset] = (value &gt;&gt;&gt; 24)
+    this[offset + 1] = (value &gt;&gt;&gt; 16)
+    this[offset + 2] = (value &gt;&gt;&gt; 8)
+    this[offset + 3] = (value &amp; 0xff)
+  } else {
+    objectWriteUInt32(this, value, offset, false)
+  }
+  return offset + 4
+}
+
+Buffer.prototype.writeIntLE = function writeIntLE (value, offset, byteLength, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) {
+    var limit = Math.pow(2, 8 * byteLength - 1)
+
+    checkInt(this, value, offset, byteLength, limit - 1, -limit)
+  }
+
+  var i = 0
+  var mul = 1
+  var sub = value &lt; 0 ? 1 : 0
+  this[offset] = value &amp; 0xFF
+  while (++i &lt; byteLength &amp;&amp; (mul *= 0x100)) {
+    this[offset + i] = ((value / mul) &gt;&gt; 0) - sub &amp; 0xFF
+  }
+
+  return offset + byteLength
+}
+
+Buffer.prototype.writeIntBE = function writeIntBE (value, offset, byteLength, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) {
+    var limit = Math.pow(2, 8 * byteLength - 1)
+
+    checkInt(this, value, offset, byteLength, limit - 1, -limit)
+  }
+
+  var i = byteLength - 1
+  var mul = 1
+  var sub = value &lt; 0 ? 1 : 0
+  this[offset + i] = value &amp; 0xFF
+  while (--i &gt;= 0 &amp;&amp; (mul *= 0x100)) {
+    this[offset + i] = ((value / mul) &gt;&gt; 0) - sub &amp; 0xFF
+  }
+
+  return offset + byteLength
+}
+
+Buffer.prototype.writeInt8 = function writeInt8 (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 1, 0x7f, -0x80)
+  if (!Buffer.TYPED_ARRAY_SUPPORT) value = Math.floor(value)
+  if (value &lt; 0) value = 0xff + value + 1
+  this[offset] = (value &amp; 0xff)
+  return offset + 1
+}
+
+Buffer.prototype.writeInt16LE = function writeInt16LE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 2, 0x7fff, -0x8000)
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset] = (value &amp; 0xff)
+    this[offset + 1] = (value &gt;&gt;&gt; 8)
+  } else {
+    objectWriteUInt16(this, value, offset, true)
+  }
+  return offset + 2
+}
+
+Buffer.prototype.writeInt16BE = function writeInt16BE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 2, 0x7fff, -0x8000)
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset] = (value &gt;&gt;&gt; 8)
+    this[offset + 1] = (value &amp; 0xff)
+  } else {
+    objectWriteUInt16(this, value, offset, false)
+  }
+  return offset + 2
+}
+
+Buffer.prototype.writeInt32LE = function writeInt32LE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 4, 0x7fffffff, -0x80000000)
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset] = (value &amp; 0xff)
+    this[offset + 1] = (value &gt;&gt;&gt; 8)
+    this[offset + 2] = (value &gt;&gt;&gt; 16)
+    this[offset + 3] = (value &gt;&gt;&gt; 24)
+  } else {
+    objectWriteUInt32(this, value, offset, true)
+  }
+  return offset + 4
+}
+
+Buffer.prototype.writeInt32BE = function writeInt32BE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 4, 0x7fffffff, -0x80000000)
+  if (value &lt; 0) value = 0xffffffff + value + 1
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset] = (value &gt;&gt;&gt; 24)
+    this[offset + 1] = (value &gt;&gt;&gt; 16)
+    this[offset + 2] = (value &gt;&gt;&gt; 8)
+    this[offset + 3] = (value &amp; 0xff)
+  } else {
+    objectWriteUInt32(this, value, offset, false)
+  }
+  return offset + 4
+}
+
+function checkIEEE754 (buf, value, offset, ext, max, min) {
+  if (offset + ext &gt; buf.length) throw new RangeError('index out of range')
+  if (offset &lt; 0) throw new RangeError('index out of range')
+}
+
+function writeFloat (buf, value, offset, littleEndian, noAssert) {
+  if (!noAssert) {
+    checkIEEE754(buf, value, offset, 4, 3.4028234663852886e+38, -3.4028234663852886e+38)
+  }
+  ieee754.write(buf, value, offset, littleEndian, 23, 4)
+  return offset + 4
+}
+
+Buffer.prototype.writeFloatLE = function writeFloatLE (value, offset, noAssert) {
+  return writeFloat(this, value, offset, true, noAssert)
+}
+
+Buffer.prototype.writeFloatBE = function writeFloatBE (value, offset, noAssert) {
+  return writeFloat(this, value, offset, false, noAssert)
+}
+
+function writeDouble (buf, value, offset, littleEndian, noAssert) {
+  if (!noAssert) {
+    checkIEEE754(buf, value, offset, 8, 1.7976931348623157E+308, -1.7976931348623157E+308)
+  }
+  ieee754.write(buf, value, offset, littleEndian, 52, 8)
+  return offset + 8
+}
+
+Buffer.prototype.writeDoubleLE = function writeDoubleLE (value, offset, noAssert) {
+  return writeDouble(this, value, offset, true, noAssert)
+}
+
+Buffer.prototype.writeDoubleBE = function writeDoubleBE (value, offset, noAssert) {
+  return writeDouble(this, value, offset, false, noAssert)
+}
+
+// copy(targetBuffer, targetStart=0, sourceStart=0, sourceEnd=buffer.length)
+Buffer.prototype.copy = function copy (target, targetStart, start, end) {
+  if (!start) start = 0
+  if (!end &amp;&amp; end !== 0) end = this.length
+  if (targetStart &gt;= target.length) targetStart = target.length
+  if (!targetStart) targetStart = 0
+  if (end &gt; 0 &amp;&amp; end &lt; start) end = start
+
+  // Copy 0 bytes; we're done
+  if (end === start) return 0
+  if (target.length === 0 || this.length === 0) return 0
+
+  // Fatal error conditions
+  if (targetStart &lt; 0) {
+    throw new RangeError('targetStart out of bounds')
+  }
+  if (start &lt; 0 || start &gt;= this.length) throw new RangeError('sourceStart out of bounds')
+  if (end &lt; 0) throw new RangeError('sourceEnd out of bounds')
+
+  // Are we oob?
+  if (end &gt; this.length) end = this.length
+  if (target.length - targetStart &lt; end - start) {
+    end = target.length - targetStart + start
+  }
+
+  var len = end - start
+  var i
+
+  if (this === target &amp;&amp; start &lt; targetStart &amp;&amp; targetStart &lt; end) {
+    // descending copy from end
+    for (i = len - 1; i &gt;= 0; i--) {
+      target[i + targetStart] = this[i + start]
+    }
+  } else if (len &lt; 1000 || !Buffer.TYPED_ARRAY_SUPPORT) {
+    // ascending copy from start
+    for (i = 0; i &lt; len; i++) {
+      target[i + targetStart] = this[i + start]
+    }
+  } else {
+    Uint8Array.prototype.set.call(
+      target,
+      this.subarray(start, start + len),
+      targetStart
+    )
+  }
+
+  return len
+}
+
+// fill(value, start=0, end=buffer.length)
+Buffer.prototype.fill = function fill (value, start, end) {
+  if (!value) value = 0
+  if (!start) start = 0
+  if (!end) end = this.length
+
+  if (end &lt; start) throw new RangeError('end &lt; start')
+
+  // Fill 0 bytes; we're done
+  if (end === start) return
+  if (this.length === 0) return
+
+  if (start &lt; 0 || start &gt;= this.length) throw new RangeError('start out of bounds')
+  if (end &lt; 0 || end &gt; this.length) throw new RangeError('end out of bounds')
+
+  var i
+  if (typeof value === 'number') {
+    for (i = start; i &lt; end; i++) {
+      this[i] = value
+    }
+  } else {
+    var bytes = utf8ToBytes(value.toString())
+    var len = bytes.length
+    for (i = start; i &lt; end; i++) {
+      this[i] = bytes[i % len]
+    }
+  }
+
+  return this
+}
+
+// HELPER FUNCTIONS
+// ================
+
+var INVALID_BASE64_RE = /[^+\/0-9A-Za-z-_]/g
+
+function base64clean (str) {
+  // Node strips out invalid characters like \n and \t from the string, base64-js does not
+  str = stringtrim(str).replace(INVALID_BASE64_RE, '')
+  // Node converts strings with length &lt; 2 to ''
+  if (str.length &lt; 2) return ''
+  // Node allows for non-padded base64 strings (missing trailing ===), base64-js does not
+  while (str.length % 4 !== 0) {
+    str = str + '='
+  }
+  return str
+}
+
+function stringtrim (str) {
+  if (str.trim) return str.trim()
+  return str.replace(/^\s+|\s+$/g, '')
+}
+
+function toHex (n) {
+  if (n &lt; 16) return '0' + n.toString(16)
+  return n.toString(16)
+}
+
+function utf8ToBytes (string, units) {
+  units = units || Infinity
+  var codePoint
+  var length = string.length
+  var leadSurrogate = null
+  var bytes = []
+
+  for (var i = 0; i &lt; length; i++) {
+    codePoint = string.charCodeAt(i)
+
+    // is surrogate component
+    if (codePoint &gt; 0xD7FF &amp;&amp; codePoint &lt; 0xE000) {
+      // last char was a lead
+      if (!leadSurrogate) {
+        // no lead yet
+        if (codePoint &gt; 0xDBFF) {
+          // unexpected trail
+          if ((units -= 3) &gt; -1) bytes.push(0xEF, 0xBF, 0xBD)
+          continue
+        } else if (i + 1 === length) {
+          // unpaired lead
+          if ((units -= 3) &gt; -1) bytes.push(0xEF, 0xBF, 0xBD)
+          continue
+        }
+
+        // valid lead
+        leadSurrogate = codePoint
+
+        continue
+      }
+
+      // 2 leads in a row
+      if (codePoint &lt; 0xDC00) {
+        if ((units -= 3) &gt; -1) bytes.push(0xEF, 0xBF, 0xBD)
+        leadSurrogate = codePoint
+        continue
+      }
+
+      // valid surrogate pair
+      codePoint = (leadSurrogate - 0xD800 &lt;&lt; 10 | codePoint - 0xDC00) + 0x10000
+    } else if (leadSurrogate) {
+      // valid bmp char, but last char was a lead
+      if ((units -= 3) &gt; -1) bytes.push(0xEF, 0xBF, 0xBD)
+    }
+
+    leadSurrogate = null
+
+    // encode utf8
+    if (codePoint &lt; 0x80) {
+      if ((units -= 1) &lt; 0) break
+      bytes.push(codePoint)
+    } else if (codePoint &lt; 0x800) {
+      if ((units -= 2) &lt; 0) break
+      bytes.push(
+        codePoint &gt;&gt; 0x6 | 0xC0,
+        codePoint &amp; 0x3F | 0x80
+      )
+    } else if (codePoint &lt; 0x10000) {
+      if ((units -= 3) &lt; 0) break
+      bytes.push(
+        codePoint &gt;&gt; 0xC | 0xE0,
+        codePoint &gt;&gt; 0x6 &amp; 0x3F | 0x80,
+        codePoint &amp; 0x3F | 0x80
+      )
+    } else if (codePoint &lt; 0x110000) {
+      if ((units -= 4) &lt; 0) break
+      bytes.push(
+        codePoint &gt;&gt; 0x12 | 0xF0,
+        codePoint &gt;&gt; 0xC &amp; 0x3F | 0x80,
+        codePoint &gt;&gt; 0x6 &amp; 0x3F | 0x80,
+        codePoint &amp; 0x3F | 0x80
+      )
+    } else {
+      throw new Error('Invalid code point')
+    }
+  }
+
+  return bytes
+}
+
+function asciiToBytes (str) {
+  var byteArray = []
+  for (var i = 0; i &lt; str.length; i++) {
+    // Node's code seems to be doing this and not &amp; 0x7F..
+    byteArray.push(str.charCodeAt(i) &amp; 0xFF)
+  }
+  return byteArray
+}
+
+function utf16leToBytes (str, units) {
+  var c, hi, lo
+  var byteArray = []
+  for (var i = 0; i &lt; str.length; i++) {
+    if ((units -= 2) &lt; 0) break
+
+    c = str.charCodeAt(i)
+    hi = c &gt;&gt; 8
+    lo = c % 256
+    byteArray.push(lo)
+    byteArray.push(hi)
+  }
+
+  return byteArray
+}
+
+function base64ToBytes (str) {
+  return base64.toByteArray(base64clean(str))
+}
+
+function blitBuffer (src, dst, offset, length) {
+  for (var i = 0; i &lt; length; i++) {
+    if ((i + offset &gt;= dst.length) || (i &gt;= src.length)) break
+    dst[i + offset] = src[i]
+  }
+  return i
+}]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-09-01 13:22:25&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;3c52c7d637e92e0054db43ba54990e42&lt;/sys_id&gt;&lt;sys_mod_count&gt;7&lt;/sys_mod_count&gt;&lt;sys_name&gt;buffer.js&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_3c52c7d637e92e0054db43ba54990e42&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-09-02 19:03:02&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Alexa Changes">cf28697a37616e0054db43ba54990eb5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-09-02 20:04:08</sys_created_on>
+<sys_id>0728697a37616e0054db43ba54990eb6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-09-02 20:04:08</sys_updated_on>
+<table/>
+<target_name>buffer.js</target_name>
+<type>UI Script</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_script_6735321637e92e0054db43ba54990ec4</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;avs.Observable.js&lt;/name&gt;&lt;script&gt;&lt;![CDATA['use strict';
+
+function Observable(el) {
+  let callbacks = {};
+
+  el.on = function(name, fn) {
+    if (typeof fn !== 'function') {
+      throw new TypeError('Second argument for "on" method must be a function.');
+    }
+
+    (callbacks[name] = callbacks[name] || []).push(fn);
+
+    return el;
+  };
+
+  el.one = function(name, fn) {
+    fn.one = true;
+    return el.on.call(el, name, fn);
+  };
+
+  el.off = function(name, fn) {
+    if (name === '*') {
+      callbacks = {};
+      return callbacks
+    }
+
+    if (!callbacks[name]) {
+      return false;
+    }
+
+    if (fn) {
+      if (typeof fn !== 'function') {
+        throw new TypeError('Second argument for "off" method must be a function.');
+      }
+
+      callbacks[name] = callbacks[name].map(function(fm, i) {
+        if (fm === fn) {
+          callbacks[name].splice(i, 1);
+        }
+      });
+    } else {
+      delete callbacks[name];
+    }
+  };
+
+  el.emit = function(name /*, args */) {
+    if (!callbacks[name] || !callbacks[name].length) {
+      return;
+    }
+
+    const args = [].slice.call(arguments, 1);
+
+    callbacks[name].forEach(function(fn, i) {
+      if (fn) {
+        fn.apply(fn, args);
+        if (fn.one) {
+          callbacks[name].splice(i, 1);
+        }
+      }
+    });
+
+    return el;
+  };
+
+  return el;
+}
+
+window.Observable = Observable;
+]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-09-01 12:23:54&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;6735321637e92e0054db43ba54990ec4&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;avs.Observable.js&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_6735321637e92e0054db43ba54990ec4&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-09-02 12:02:03&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Alexa Changes">cf28697a37616e0054db43ba54990eb5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-09-02 20:04:08</sys_created_on>
+<sys_id>0b28697a37616e0054db43ba54990eb6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-09-02 20:04:08</sys_updated_on>
+<table/>
+<target_name>avs.Observable.js</target_name>
+<type>UI Script</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_script_a9b9b25637e92e0054db43ba54990ea6</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;avs.utils.urlToAudioBuffer.js&lt;/name&gt;&lt;script&gt;&lt;![CDATA['use strict';
+
+function arrayBufferToAudioBuffer(url, context) {
+  window.AudioContext = window.AudioContext || window.webkitAudioContext;
+
+  return new Promise((resolve, reject) =&gt; {
+    if (context) {
+      if (Object.prototype.toString.call(context) !== '[object AudioContext]') {
+        throw new TypeError('`context` must be an AudioContext');
+      }
+    } else {
+      context = new AudioContext();
+    }
+
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', url, true);
+    xhr.responseType = 'arraybuffer';
+
+    xhr.onload = (event) =&gt; {
+      context.decodeAudioData(event.response, (data) =&gt; {
+        resolve(data);
+      }, reject);
+    };
+
+    xhr.send();
+  });
+}
+
+module.exports = arrayBufferToAudioBuffer;]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-09-01 12:43:26&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;a9b9b25637e92e0054db43ba54990ea6&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;avs.utils.urlToAudioBuffer.js&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_a9b9b25637e92e0054db43ba54990ea6&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-09-01 12:43:26&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Alexa Changes">cf28697a37616e0054db43ba54990eb5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-09-02 20:04:08</sys_created_on>
+<sys_id>0f28697a37616e0054db43ba54990eb6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-09-02 20:04:08</sys_updated_on>
+<table/>
+<target_name>avs.utils.urlToAudioBuffer.js</target_name>
+<type>UI Script</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_script_0a36361637e92e0054db43ba54990ea8</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;avs.utils.arrayBufferToString.js&lt;/name&gt;&lt;script&gt;&lt;![CDATA['use strict';
+
+/**
+ * @credit https://developers.google.com/web/updates/2012/06/How-to-convert-ArrayBuffer-to-and-from-String?hl=en
+ */
+function arrayBufferToString(buffer) {
+  return String.fromCharCode.apply(null, new Uint16Array(buffer));
+}
+
+window.arrayBufferToString = arrayBufferToString;
+]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-09-01 12:28:10&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;0a36361637e92e0054db43ba54990ea8&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;avs.utils.arrayBufferToString.js&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_0a36361637e92e0054db43ba54990ea8&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-09-02 12:59:17&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Alexa Changes">cf28697a37616e0054db43ba54990eb5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-09-02 20:04:08</sys_created_on>
+<sys_id>4328697a37616e0054db43ba54990eb6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-09-02 20:04:08</sys_updated_on>
+<table/>
+<target_name>avs.utils.arrayBufferToString.js</target_name>
+<type>UI Script</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_script_ea8d006a372d2e0054db43ba54990e42</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;http-message-parser.js&lt;/name&gt;&lt;script&gt;&lt;![CDATA[(function(root) {
+  'use strict';
+
+  function httpMessageParser(message) {
+    const result = {
+      httpVersion: null,
+      statusCode: null,
+      statusMessage: null,
+      method: null,
+      url: null,
+      headers: null,
+      body: null,
+      boundary: null,
+      multipart: null
+    };
+
+    var messageString = '';
+    var headerNewlineIndex = 0;
+    var fullBoundary = null;
+
+    if (httpMessageParser._isBuffer(message)) {
+      messageString = message.toString();
+    } else if (typeof message === 'string') {
+      messageString = message;
+      message = httpMessageParser._createBuffer(messageString);
+    } else {
+      return result;
+    }
+
+    /*
+     * Strip extra return characters
+     */
+    messageString = messageString.replace(/\r\n/gim, '\n');
+
+    /*
+     * Trim leading whitespace
+     */
+    (function() {
+      const firstNonWhitespaceRegex = /[\w-]+/gim;
+      const firstNonWhitespaceIndex = messageString.search(firstNonWhitespaceRegex);
+      if (firstNonWhitespaceIndex &gt; 0) {
+        message = message.slice(firstNonWhitespaceIndex, message.length);
+        messageString = message.toString();
+      }
+    })();
+
+    /* Parse request line
+     */
+    (function() {
+      const possibleRequestLine = messageString.split(/\n|\r\n/)[0];
+      const requestLineMatch = possibleRequestLine.match(httpMessageParser._requestLineRegex);
+
+      if (Array.isArray(requestLineMatch) &amp;&amp; requestLineMatch.length &gt; 1) {
+        result.httpVersion = parseFloat(requestLineMatch[1]);
+        result.statusCode = parseInt(requestLineMatch[2]);
+        result.statusMessage = requestLineMatch[3];
+      } else {
+        const responseLineMath = possibleRequestLine.match(httpMessageParser._responseLineRegex);
+        if (Array.isArray(responseLineMath) &amp;&amp; responseLineMath.length &gt; 1) {
+          result.method = responseLineMath[1];
+          result.url = responseLineMath[2];
+          result.httpVersion = parseFloat(responseLineMath[3]);
+        }
+      }
+    })();
+
+    /* Parse headers
+     */
+    (function() {
+      headerNewlineIndex = messageString.search(httpMessageParser._headerNewlineRegex);
+      if (headerNewlineIndex &gt; -1) {
+        headerNewlineIndex = headerNewlineIndex + 1; // 1 for newline length
+      } else {
+        /* There's no line breaks so check if request line exists
+         * because the message might be all headers and no body
+         */
+        if (result.httpVersion) {
+          headerNewlineIndex = messageString.length;
+        }
+      }
+
+      const headersString = messageString.substr(0, headerNewlineIndex);
+      const headers = httpMessageParser._parseHeaders(headersString);
+
+      if (Object.keys(headers).length &gt; 0) {
+        result.headers = headers;
+
+        // TOOD: extract boundary.
+      }
+    })();
+
+    /* Try to get boundary if no boundary header
+     */
+    (function() {
+      if (!result.boundary) {
+        const boundaryMatch = messageString.match(httpMessageParser._boundaryRegex);
+
+        if (Array.isArray(boundaryMatch) &amp;&amp; boundaryMatch.length) {
+          fullBoundary = boundaryMatch[0].replace(/[\r\n]+/gi, '');
+          const boundary = fullBoundary.replace(/^--/,'');
+          result.boundary = boundary;
+        }
+      }
+    })();
+
+    /* Parse body
+     */
+    (function() {
+      var start = headerNewlineIndex;
+      var end = message.length;
+      const firstBoundaryIndex = messageString.indexOf(fullBoundary);
+
+      if (firstBoundaryIndex &gt; -1) {
+        start = headerNewlineIndex;
+        end = firstBoundaryIndex;
+      }
+
+      if (headerNewlineIndex &gt; -1) {
+        const body = message.slice(start, end);
+
+        if (body &amp;&amp; body.length) {
+          result.body = httpMessageParser._isFakeBuffer(body) ? body.toString() : body;
+        }
+      }
+    })();
+
+    /* Parse multipart sections
+     */
+    (function() {
+      if (result.boundary) {
+        const multipartStart = messageString.indexOf(fullBoundary) + fullBoundary.length;
+        const multipartEnd = messageString.lastIndexOf(fullBoundary);
+        const multipartBody = messageString.substr(multipartStart, multipartEnd);
+        const parts = multipartBody.split(fullBoundary);
+
+        result.multipart = parts.filter(httpMessageParser._isTruthy).map(function(part, i) {
+          const result = {
+            headers: null,
+            body: null,
+            meta: {
+              body: {
+                byteOffset: {
+                  start: null,
+                  end: null
+                }
+              }
+            }
+          };
+
+          const newlineRegex = /\n\n|\r\n\r\n/gim;
+          var newlineIndex = 0;
+          var newlineMatch = newlineRegex.exec(part);
+          var body = null;
+
+          if (newlineMatch) {
+            newlineIndex = newlineMatch.index;
+            if (newlineMatch.index &lt;= 0) {
+              newlineMatch = newlineRegex.exec(part);
+              if (newlineMatch) {
+                newlineIndex = newlineMatch.index;
+              }
+            }
+          }
+
+          const possibleHeadersString = part.substr(0, newlineIndex);
+
+          let startOffset = null;
+          let endOffset = null;
+
+          if (newlineIndex &gt; -1) {
+            const headers = httpMessageParser._parseHeaders(possibleHeadersString);
+            if (Object.keys(headers).length &gt; 0) {
+              result.headers = headers;
+
+              var boundaryIndexes = [];
+              for (var j = 0; j &lt; message.length; j++) {
+                var boundaryMatch = message.slice(j, j + fullBoundary.length).toString();
+
+                if (boundaryMatch === fullBoundary) {
+                  boundaryIndexes.push(j);
+                }
+              }
+
+              var boundaryNewlineIndexes = [];
+              boundaryIndexes.slice(0, boundaryIndexes.length - 1).forEach(function(m, k) {
+                const partBody = message.slice(boundaryIndexes[k], boundaryIndexes[k + 1]).toString();
+                var headerNewlineIndex = partBody.search(/\n\n|\r\n\r\n/gim) + 2;
+                headerNewlineIndex  = boundaryIndexes[k] + headerNewlineIndex;
+                boundaryNewlineIndexes.push(headerNewlineIndex);
+              });
+
+              startOffset = boundaryNewlineIndexes[i];
+              endOffset = boundaryIndexes[i + 1];
+              body = message.slice(startOffset, endOffset);
+            } else {
+              body = part;
+            }
+          } else {
+            body = part;
+          }
+
+          result.body = httpMessageParser._isFakeBuffer(body) ? body.toString() : body;
+          result.meta.body.byteOffset.start = startOffset;
+          result.meta.body.byteOffset.end = endOffset;
+
+          return result;
+        });
+      }
+    })();
+
+    return result;
+  }
+
+  httpMessageParser._isTruthy = function _isTruthy(v) {
+    return !!v;
+  };
+
+  httpMessageParser._isNumeric = function _isNumeric(v) {
+    if (typeof v === 'number' &amp;&amp; !isNaN(v)) {
+      return true;
+    }
+
+    v = (v||'').toString().trim();
+
+    if (!v) {
+      return false;
+    }
+
+    return !isNaN(v);
+  };
+
+  httpMessageParser._isBuffer = function(item) {
+    return ((httpMessageParser._isNodeBufferSupported() &amp;&amp;
+            typeof global === 'object' &amp;&amp;
+            global.Buffer.isBuffer(item)) ||
+            (item instanceof Object &amp;&amp;
+             item._isBuffer));
+  };
+
+  httpMessageParser._isNodeBufferSupported = function() {
+    return (typeof global === 'object' &amp;&amp;
+            typeof global.Buffer === 'function' &amp;&amp;
+            typeof global.Buffer.isBuffer === 'function');
+  };
+
+  httpMessageParser._parseHeaders = function _parseHeaders(body) {
+    const headers = {};
+
+    if (typeof body !== 'string') {
+      return headers;
+    }
+
+    body.split(/[\r\n]/).forEach(function(string) {
+      const match = string.match(/([\w-]+):\s*(.*)/i);
+
+      if (Array.isArray(match) &amp;&amp; match.length === 3) {
+        const key = match[1];
+        const value = match[2];
+
+        headers[key] = httpMessageParser._isNumeric(value) ? Number(value) : value;
+      }
+    });
+
+    return headers;
+  };
+
+  httpMessageParser._requestLineRegex = /HTTP\/(1\.0|1\.1|2\.0)\s+(\d+)\s+([\w\s-_]+)/i;
+  httpMessageParser._responseLineRegex = /(GET|POST|PUT|DELETE|PATCH|OPTIONS|HEAD|TRACE|CONNECT)\s+(.*)\s+HTTP\/(1\.0|1\.1|2\.0)/i;
+  httpMessageParser._headerNewlineRegex = /^[\r\n]+/gim;
+  httpMessageParser._boundaryRegex = /(\n|\r\n)+--[\w-]+(\n|\r\n)+/g;
+
+  httpMessageParser._createBuffer = function(data) {
+    if (httpMessageParser._isNodeBufferSupported()) {
+      return new Buffer(data);
+    }
+
+    return new httpMessageParser._FakeBuffer(data);
+  };
+
+  httpMessageParser._isFakeBuffer = function isFakeBuffer(obj) {
+    return obj instanceof httpMessageParser._FakeBuffer;
+  };
+
+  httpMessageParser._FakeBuffer = function FakeBuffer(data) {
+    if (!(this instanceof httpMessageParser._FakeBuffer)) {
+      return new httpMessageParser._FakeBuffer(data);
+    }
+
+    this.data = [];
+
+    if (Array.isArray(data)) {
+      this.data = data;
+    } else if (typeof data === 'string') {
+      this.data = [].slice.call(data);
+    }
+
+    function LiveObject() {}
+    Object.defineProperty(LiveObject.prototype, 'length', {
+      get: function() {
+        return this.data.length;
+      }.bind(this)
+    });
+
+    this.length = (new LiveObject()).length;
+  };
+
+  httpMessageParser._FakeBuffer.prototype.slice = function slice() {
+    var newArray = [].slice.apply(this.data, arguments);
+    return new httpMessageParser._FakeBuffer(newArray);
+  };
+
+  httpMessageParser._FakeBuffer.prototype.search = function search() {
+    return [].search.apply(this.data, arguments);
+  };
+
+  httpMessageParser._FakeBuffer.prototype.indexOf = function indexOf() {
+    return [].indexOf.apply(this.data, arguments);
+  };
+
+  httpMessageParser._FakeBuffer.prototype.toString = function toString() {
+    return this.data.join('');
+  };
+
+  
+  window.httpMessageParser = httpMessageParser;
+
+})(this);
+]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-09-01 18:49:55&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;ea8d006a372d2e0054db43ba54990e42&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;http-message-parser.js&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_ea8d006a372d2e0054db43ba54990e42&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-09-02 12:12:24&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Alexa Changes">cf28697a37616e0054db43ba54990eb5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-09-02 20:04:08</sys_created_on>
+<sys_id>4328697a37616e0054db43ba54990eb7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-09-02 20:04:08</sys_updated_on>
+<table/>
+<target_name>http-message-parser.js</target_name>
+<type>UI Script</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_script_5ce5361637e92e0054db43ba54990e75</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;avs.utils.arrayBufferToAudioBuffer.js&lt;/name&gt;&lt;script&gt;&lt;![CDATA['use strict';
+
+function arrayBufferToAudioBuffer(arrayBuffer, context) {
+  window.AudioContext = window.AudioContext || window.webkitAudioContext;
+
+  return new Promise((resolve, reject) =&gt; {
+    if (context) {
+      if (Object.prototype.toString.call(context) !== '[object AudioContext]') {
+        throw new TypeError('`context` must be an AudioContext');
+      }
+    } else {
+      context = new AudioContext();
+    }
+
+    context.decodeAudioData(arrayBuffer, (data) =&gt; {
+      resolve(data);
+    }, reject);
+  });
+}
+]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-09-01 12:26:41&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;5ce5361637e92e0054db43ba54990e75&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;avs.utils.arrayBufferToAudioBuffer.js&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_5ce5361637e92e0054db43ba54990e75&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-09-02 18:33:34&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Alexa Changes">cf28697a37616e0054db43ba54990eb5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-09-02 20:04:08</sys_created_on>
+<sys_id>4728697a37616e0054db43ba54990eb6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-09-02 20:04:08</sys_updated_on>
+<table/>
+<target_name>avs.utils.arrayBufferToAudioBuffer.js</target_name>
+<type>UI Script</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_script_89c6cca6372d2e0054db43ba54990e2f</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;qs.js&lt;/name&gt;&lt;script&gt;&lt;![CDATA[/** utils.js **/
+var hexTable = (function () {
+    var array = new Array(256);
+    for (var i = 0; i &lt; 256; ++i) {
+        array[i] = '%' + ((i &lt; 16 ? '0' : '') + i.toString(16)).toUpperCase();
+    }
+
+    return array;
+}());
+
+var Utils = {};
+
+Utils.arrayToObject = function (source, options) {
+    var obj = options.plainObjects ? Object.create(null) : {};
+    for (var i = 0; i &lt; source.length; ++i) {
+        if (typeof source[i] !== 'undefined') {
+            obj[i] = source[i];
+        }
+    }
+
+    return obj;
+};
+
+Utils.merge = function (target, source, options) {
+    if (!source) {
+        return target;
+    }
+
+    if (typeof source !== 'object') {
+        if (Array.isArray(target)) {
+            target.push(source);
+        } else if (typeof target === 'object') {
+            target[source] = true;
+        } else {
+            return [target, source];
+        }
+
+        return target;
+    }
+
+    if (typeof target !== 'object') {
+        return [target].concat(source);
+    }
+
+    var mergeTarget = target;
+    if (Array.isArray(target) &amp;&amp; !Array.isArray(source)) {
+        mergeTarget = Utils.arrayToObject(target, options);
+    }
+
+	return Object.keys(source).reduce(function (acc, key) {
+        var value = source[key];
+
+        if (Object.prototype.hasOwnProperty.call(acc, key)) {
+            acc[key] = Utils.merge(acc[key], value, options);
+        } else {
+            acc[key] = value;
+        }
+		return acc;
+    }, mergeTarget);
+};
+
+Utils.decode = function (str) {
+    try {
+        return decodeURIComponent(str.replace(/\+/g, ' '));
+    } catch (e) {
+        return str;
+    }
+};
+
+Utils.encode = function (str) {
+    // This code was originally written by Brian White (mscdex) for the io.js core querystring library.
+    // It has been adapted here for stricter adherence to RFC 3986
+    if (str.length === 0) {
+        return str;
+    }
+
+    var string = typeof str === 'string' ? str : String(str);
+
+    var out = '';
+    for (var i = 0; i &lt; string.length; ++i) {
+        var c = string.charCodeAt(i);
+
+        if (
+            c === 0x2D || // -
+            c === 0x2E || // .
+            c === 0x5F || // _
+            c === 0x7E || // ~
+            (c &gt;= 0x30 &amp;&amp; c &lt;= 0x39) || // 0-9
+            (c &gt;= 0x41 &amp;&amp; c &lt;= 0x5A) || // a-z
+            (c &gt;= 0x61 &amp;&amp; c &lt;= 0x7A) // A-Z
+        ) {
+            out += string.charAt(i);
+            continue;
+        }
+
+        if (c &lt; 0x80) {
+            out = out + hexTable[c];
+            continue;
+        }
+
+        if (c &lt; 0x800) {
+            out = out + (hexTable[0xC0 | (c &gt;&gt; 6)] + hexTable[0x80 | (c &amp; 0x3F)]);
+            continue;
+        }
+
+        if (c &lt; 0xD800 || c &gt;= 0xE000) {
+            out = out + (hexTable[0xE0 | (c &gt;&gt; 12)] + hexTable[0x80 | ((c &gt;&gt; 6) &amp; 0x3F)] + hexTable[0x80 | (c &amp; 0x3F)]);
+            continue;
+        }
+
+        i += 1;
+        c = 0x10000 + (((c &amp; 0x3FF) &lt;&lt; 10) | (string.charCodeAt(i) &amp; 0x3FF));
+        out += (hexTable[0xF0 | (c &gt;&gt; 18)] + hexTable[0x80 | ((c &gt;&gt; 12) &amp; 0x3F)] + hexTable[0x80 | ((c &gt;&gt; 6) &amp; 0x3F)] + hexTable[0x80 | (c &amp; 0x3F)]);
+    }
+
+    return out;
+};
+
+Utils.compact = function (obj, references) {
+    if (typeof obj !== 'object' || obj === null) {
+        return obj;
+    }
+
+    var refs = references || [];
+    var lookup = refs.indexOf(obj);
+    if (lookup !== -1) {
+        return refs[lookup];
+    }
+
+    refs.push(obj);
+
+    if (Array.isArray(obj)) {
+        var compacted = [];
+
+        for (var i = 0; i &lt; obj.length; ++i) {
+            if (typeof obj[i] !== 'undefined') {
+                compacted.push(obj[i]);
+            }
+        }
+
+        return compacted;
+    }
+
+    var keys = Object.keys(obj);
+    for (var j = 0; j &lt; keys.length; ++j) {
+        var key = keys[j];
+        obj[key] = Utils.compact(obj[key], refs);
+    }
+
+    return obj;
+};
+
+Utils.isRegExp = function (obj) {
+    return Object.prototype.toString.call(obj) === '[object RegExp]';
+};
+
+Utils.isBuffer = function (obj) {
+    if (obj === null || typeof obj === 'undefined') {
+        return false;
+    }
+
+    return !!(obj.constructor &amp;&amp; obj.constructor.isBuffer &amp;&amp; obj.constructor.isBuffer(obj));
+};
+/** parse.js **/
+
+var parseLocal = {
+    delimiter: '&amp;',
+    depth: 5,
+    arrayLimit: 20,
+    parameterLimit: 1000,
+    strictNullHandling: false,
+    plainObjects: false,
+    allowPrototypes: false,
+    allowDots: false
+};
+
+parseLocal.parseValues = function (str, options) {
+    var obj = {};
+    var parts = str.split(options.delimiter, options.parameterLimit === Infinity ? undefined : options.parameterLimit);
+
+    for (var i = 0; i &lt; parts.length; ++i) {
+        var part = parts[i];
+        var pos = part.indexOf(']=') === -1 ? part.indexOf('=') : part.indexOf(']=') + 1;
+
+        if (pos === -1) {
+            obj[Utils.decode(part)] = '';
+
+            if (options.strictNullHandling) {
+                obj[Utils.decode(part)] = null;
+            }
+        } else {
+            var key = Utils.decode(part.slice(0, pos));
+            var val = Utils.decode(part.slice(pos + 1));
+
+            if (Object.prototype.hasOwnProperty.call(obj, key)) {
+                obj[key] = [].concat(obj[key]).concat(val);
+            } else {
+                obj[key] = val;
+            }
+        }
+    }
+
+    return obj;
+};
+
+parseLocal.parseObject = function (chain, val, options) {
+    if (!chain.length) {
+        return val;
+    }
+
+    var root = chain.shift();
+
+    var obj;
+    if (root === '[]') {
+        obj = [];
+        obj = obj.concat(parseLocal.parseObject(chain, val, options));
+    } else {
+        obj = options.plainObjects ? Object.create(null) : {};
+        var cleanRoot = root[0] === '[' &amp;&amp; root[root.length - 1] === ']' ? root.slice(1, root.length - 1) : root;
+        var index = parseInt(cleanRoot, 10);
+        if (
+            !isNaN(index) &amp;&amp;
+            root !== cleanRoot &amp;&amp;
+            String(index) === cleanRoot &amp;&amp;
+            index &gt;= 0 &amp;&amp;
+            (options.parseArrays &amp;&amp; index &lt;= options.arrayLimit)
+        ) {
+            obj = [];
+            obj[index] = parseLocal.parseObject(chain, val, options);
+        } else {
+            obj[cleanRoot] = parseLocal.parseObject(chain, val, options);
+        }
+    }
+
+    return obj;
+};
+
+parseLocal.parseKeys = function (givenKey, val, options) {
+    if (!givenKey) {
+        return;
+    }
+
+    // Transform dot notation to bracket notation
+    var key = options.allowDots ? givenKey.replace(/\.([^\.\[]+)/g, '[$1]') : givenKey;
+
+    // The regex chunks
+
+    var parent = /^([^\[\]]*)/;
+    var child = /(\[[^\[\]]*\])/g;
+
+    // Get the parent
+
+    var segment = parent.exec(key);
+
+    // Stash the parent if it exists
+
+    var keys = [];
+    if (segment[1]) {
+        // If we aren't using plain objects, optionally prefix keys
+        // that would overwrite object prototype properties
+        if (!options.plainObjects &amp;&amp; Object.prototype.hasOwnProperty(segment[1])) {
+            if (!options.allowPrototypes) {
+                return;
+            }
+        }
+
+        keys.push(segment[1]);
+    }
+
+    // Loop through children appending to the array until we hit depth
+
+    var i = 0;
+    while ((segment = child.exec(key)) !== null &amp;&amp; i &lt; options.depth) {
+        i += 1;
+        if (!options.plainObjects &amp;&amp; Object.prototype.hasOwnProperty(segment[1].replace(/\[|\]/g, ''))) {
+            if (!options.allowPrototypes) {
+                continue;
+            }
+        }
+        keys.push(segment[1]);
+    }
+
+    // If there's a remainder, just add whatever is left
+
+    if (segment) {
+        keys.push('[' + key.slice(segment.index) + ']');
+    }
+
+    return parseLocal.parseObject(keys, val, options);
+};
+
+var Parse = function (str, opts) {
+    var options = opts || {};
+    options.delimiter = typeof options.delimiter === 'string' || Utils.isRegExp(options.delimiter) ? options.delimiter : parseLocal.delimiter;
+    options.depth = typeof options.depth === 'number' ? options.depth : parseLocal.depth;
+    options.arrayLimit = typeof options.arrayLimit === 'number' ? options.arrayLimit : parseLocal.arrayLimit;
+    options.parseArrays = options.parseArrays !== false;
+    options.allowDots = typeof options.allowDots === 'boolean' ? options.allowDots : parseLocal.allowDots;
+    options.plainObjects = typeof options.plainObjects === 'boolean' ? options.plainObjects : parseLocal.plainObjects;
+    options.allowPrototypes = typeof options.allowPrototypes === 'boolean' ? options.allowPrototypes : parseLocal.allowPrototypes;
+    options.parameterLimit = typeof options.parameterLimit === 'number' ? options.parameterLimit : parseLocal.parameterLimit;
+    options.strictNullHandling = typeof options.strictNullHandling === 'boolean' ? options.strictNullHandling : parseLocal.strictNullHandling;
+
+    if (
+        str === '' ||
+        str === null ||
+        typeof str === 'undefined'
+    ) {
+        return options.plainObjects ? Object.create(null) : {};
+    }
+
+    var tempObj = typeof str === 'string' ? parseLocal.parseValues(str, options) : str;
+    var obj = options.plainObjects ? Object.create(null) : {};
+
+    // Iterate over the keys and setup the new object
+
+    var keys = Object.keys(tempObj);
+    for (var i = 0; i &lt; keys.length; ++i) {
+        var key = keys[i];
+        var newObj = parseLocal.parseKeys(key, tempObj[key], options);
+        obj = Utils.merge(obj, newObj, options);
+    }
+
+    return Utils.compact(obj);
+};
+
+/** stringify.js **/
+
+var internals = {
+    delimiter: '&amp;',
+    arrayPrefixGenerators: {
+        brackets: function (prefix) {
+            return prefix + '[]';
+        },
+        indices: function (prefix, key) {
+            return prefix + '[' + key + ']';
+        },
+        repeat: function (prefix) {
+            return prefix;
+        }
+    },
+    strictNullHandling: false,
+    skipNulls: false,
+    encode: true
+};
+
+internals.stringify = function (object, prefix, generateArrayPrefix, strictNullHandling, skipNulls, encode, filter, sort, allowDots) {
+    var obj = object;
+    if (typeof filter === 'function') {
+        obj = filter(prefix, obj);
+    } else if (Utils.isBuffer(obj)) {
+        obj = String(obj);
+    } else if (obj instanceof Date) {
+        obj = obj.toISOString();
+    } else if (obj === null) {
+        if (strictNullHandling) {
+            return encode ? Utils.encode(prefix) : prefix;
+        }
+
+        obj = '';
+    }
+
+    if (typeof obj === 'string' || typeof obj === 'number' || typeof obj === 'boolean') {
+        if (encode) {
+            return [Utils.encode(prefix) + '=' + Utils.encode(obj)];
+        }
+        return [prefix + '=' + obj];
+    }
+
+    var values = [];
+
+    if (typeof obj === 'undefined') {
+        return values;
+    }
+
+    var objKeys;
+    if (Array.isArray(filter)) {
+        objKeys = filter;
+    } else {
+        var keys = Object.keys(obj);
+        objKeys = sort ? keys.sort(sort) : keys;
+    }
+
+    for (var i = 0; i &lt; objKeys.length; ++i) {
+        var key = objKeys[i];
+
+        if (skipNulls &amp;&amp; obj[key] === null) {
+            continue;
+        }
+
+        if (Array.isArray(obj)) {
+            values = values.concat(internals.stringify(obj[key], generateArrayPrefix(prefix, key), generateArrayPrefix, strictNullHandling, skipNulls, encode, filter, sort, allowDots));
+        } else {
+            values = values.concat(internals.stringify(obj[key], prefix + (allowDots ? '.' + key : '[' + key + ']'), generateArrayPrefix, strictNullHandling, skipNulls, encode, filter, sort, allowDots));
+        }
+    }
+
+    return values;
+};
+
+var Stringify = function (object, opts) {
+    var obj = object;
+    var options = opts || {};
+    var delimiter = typeof options.delimiter === 'undefined' ? internals.delimiter : options.delimiter;
+    var strictNullHandling = typeof options.strictNullHandling === 'boolean' ? options.strictNullHandling : internals.strictNullHandling;
+    var skipNulls = typeof options.skipNulls === 'boolean' ? options.skipNulls : internals.skipNulls;
+    var encode = typeof options.encode === 'boolean' ? options.encode : internals.encode;
+    var sort = typeof options.sort === 'function' ? options.sort : null;
+    var allowDots = typeof options.allowDots === 'undefined' ? false : options.allowDots;
+    var objKeys;
+    var filter;
+    if (typeof options.filter === 'function') {
+        filter = options.filter;
+        obj = filter('', obj);
+    } else if (Array.isArray(options.filter)) {
+        objKeys = filter = options.filter;
+    }
+
+    var keys = [];
+
+    if (typeof obj !== 'object' || obj === null) {
+        return '';
+    }
+
+    var arrayFormat;
+    if (options.arrayFormat in internals.arrayPrefixGenerators) {
+        arrayFormat = options.arrayFormat;
+    } else if ('indices' in options) {
+        arrayFormat = options.indices ? 'indices' : 'repeat';
+    } else {
+        arrayFormat = 'indices';
+    }
+
+    var generateArrayPrefix = internals.arrayPrefixGenerators[arrayFormat];
+
+    if (!objKeys) {
+        objKeys = Object.keys(obj);
+    }
+
+    if (sort) {
+        objKeys.sort(sort);
+    }
+
+    for (var i = 0; i &lt; objKeys.length; ++i) {
+        var key = objKeys[i];
+
+        if (skipNulls &amp;&amp; obj[key] === null) {
+            continue;
+        }
+
+        keys = keys.concat(internals.stringify(obj[key], key, generateArrayPrefix, strictNullHandling, skipNulls, encode, filter, sort, allowDots));
+    }
+
+    return keys.join(delimiter);
+};
+
+/** qs.js **/
+var qs = {
+    stringify: Stringify,
+    parse: Parse
+};]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-09-01 18:20:16&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;89c6cca6372d2e0054db43ba54990e2f&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_name&gt;qs.js&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_89c6cca6372d2e0054db43ba54990e2f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-09-02 19:56:48&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Alexa Changes">cf28697a37616e0054db43ba54990eb5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-09-02 20:04:08</sys_created_on>
+<sys_id>4b28697a37616e0054db43ba54990eb6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-09-02 20:04:08</sys_updated_on>
+<table/>
+<target_name>qs.js</target_name>
+<type>UI Script</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_script_aa69361637e92e0054db43ba54990eb2</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;avs.utils.mergeBuffers.js&lt;/name&gt;&lt;script&gt;&lt;![CDATA['use strict';
+
+/**
+ * @credit https://github.com/mattdiamond/Recorderjs
+ */
+function mergeBuffers(channelBuffer, recordingLength){
+  const result = new Float32Array(recordingLength);
+  const length = channelBuffer.length;
+  let offset = 0;
+
+  for (let i = 0; i &lt; length; i++){
+    let buffer = channelBuffer[i];
+
+    result.set(buffer, offset);
+    offset += buffer.length;
+  }
+
+  return result;
+}
+
+window.mergeBuffers = mergeBuffers;]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-09-01 12:42:08&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;aa69361637e92e0054db43ba54990eb2&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;avs.utils.mergeBuffers.js&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_aa69361637e92e0054db43ba54990eb2&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-09-02 12:19:59&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Alexa Changes">cf28697a37616e0054db43ba54990eb5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-09-02 20:04:08</sys_created_on>
+<sys_id>4f28697a37616e0054db43ba54990eb6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-09-02 20:04:08</sys_updated_on>
+<table/>
+<target_name>avs.utils.mergeBuffers.js</target_name>
+<type>UI Script</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_script_28a6361637e92e0054db43ba54990e7a</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;avs.utils.downsampleBuffer.js&lt;/name&gt;&lt;script&gt;&lt;![CDATA['use strict';
+
+/**
+ * @credit http://stackoverflow.com/a/26245260
+ */
+function downsampleBuffer(buffer, inputSampleRate, outputSampleRate) {
+  if (inputSampleRate === outputSampleRate) {
+    return buffer;
+  }
+
+  if (inputSampleRate &lt; outputSampleRate) {
+    throw new Error('Output sample rate must be less than input sample rate.');
+  }
+
+  const sampleRateRatio = inputSampleRate / outputSampleRate;
+  const newLength = Math.round(buffer.length / sampleRateRatio);
+  let result = new Float32Array(newLength);
+  let offsetResult = 0;
+  let offsetBuffer = 0;
+
+  while (offsetResult &lt; result.length) {
+    let nextOffsetBuffer = Math.round((offsetResult + 1) * sampleRateRatio);
+    let accum = 0;
+    let count = 0;
+
+    for (var i = offsetBuffer; i &lt; nextOffsetBuffer &amp;&amp; i &lt; buffer.length; i++) {
+      accum += buffer[i];
+      count++;
+    }
+
+    result[offsetResult] = accum / count;
+    offsetResult++;
+    offsetBuffer = nextOffsetBuffer;
+  }
+
+  return result;
+}
+
+window.downsampleBuffer = downsampleBuffer;]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-09-01 12:29:59&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;28a6361637e92e0054db43ba54990e7a&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;avs.utils.downsampleBuffer.js&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_28a6361637e92e0054db43ba54990e7a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-09-02 12:19:13&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Alexa Changes">cf28697a37616e0054db43ba54990eb5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-09-02 20:04:08</sys_created_on>
+<sys_id>8328697a37616e0054db43ba54990eb6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-09-02 20:04:08</sys_updated_on>
+<table/>
+<target_name>avs.utils.downsampleBuffer.js</target_name>
+<type>UI Script</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_script_f4647ed237e92e0054db43ba54990e49</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;avs.Player.js&lt;/name&gt;&lt;script&gt;&lt;![CDATA['use strict';
+
+class Player {
+  constructor() {
+    window.AudioContext = window.AudioContext || window.webkitAudioContext;
+
+    this._queue = [];
+    this._currentSource = null;
+    this._currentBuffer = null;
+    this._context = new AudioContext();
+
+    Observable(this);
+  }
+
+  _log(type, message) {
+    if (type &amp;&amp; !message) {
+      message = type;
+      type = 'log';
+    }
+
+    setTimeout(() =&gt; {
+      this.emit(Player.EventTypes.LOG, message);
+    }, 0);
+
+    if (this._debug) {
+      console[type](message);
+    }
+  }
+
+  emptyQueue() {
+    return new Promise((resolve, reject) =&gt; {
+      this._queue = [];
+      this._audio = null;
+      this._currentBuffer = null;
+      this._currentSource = null;
+      resolve();
+    });
+  }
+
+  enqueue(item) {
+    return new Promise((resolve, reject) =&gt; {
+      if (!item) {
+        const error = new Error('argument cannot be empty.');
+        this._log(error);
+        return reject(error);
+      }
+
+      const stringType = Object.prototype.toString.call(item).replace(/\[.*\s(\w+)\]/, '$1');
+
+      const proceed = (audioBuffer) =&gt; {
+        this._queue.push(audioBuffer);
+        this._log('Enqueue audio');
+        this.emit(Player.EventTypes.ENQUEUE);
+        return resolve(audioBuffer);
+      };
+
+      if (stringType === 'DataView' || stringType === 'Uint8Array') {
+        return arrayBufferToAudioBuffer(item.buffer, this._context)
+        .then(proceed);
+      } else if (stringType === 'AudioBuffer') {
+        return proceed(item);
+      } else if (stringType === 'ArrayBuffer') {
+        return arrayBufferToAudioBuffer(item, this._context)
+        .then(proceed);
+      } else if (stringType === 'String') {
+        return proceed(item);
+      } else {
+        const error = new Error('Invalid type.');
+        this.emit('error', error);
+        return reject(error);
+      }
+    });
+  }
+
+  deque() {
+    return new Promise((resolve, reject) =&gt; {
+      const item = this._queue.shift();
+
+      if (item) {
+        this._log('Deque audio');
+        this.emit(Player.EventTypes.DEQUE);
+        return resolve(item);
+      }
+
+      return reject();
+    });
+  }
+
+  play() {
+    return new Promise((resolve, reject) =&gt; {
+      if (this._context.state === 'suspended') {
+        this._context.resume();
+
+        this._log('Play audio');
+        this.emit(Player.EventTypes.PLAY);
+        resolve();
+      } else if (this._audio &amp;&amp; this._audio.paused) {
+        this._log('Play audio');
+        this.emit(Player.EventTypes.PLAY);
+        this._audio.play();
+        resolve();
+      } else {
+        return this.deque()
+        .then(audioBuffer =&gt; {
+          this._log('Play audio');
+          this.emit(Player.EventTypes.PLAY);
+          if (typeof audioBuffer === 'string') {
+            return this.playUrl(audioBuffer);
+          }
+          return this.playAudioBuffer(audioBuffer);
+        }).then(resolve);
+      }
+    });
+  }
+
+  playQueue() {
+    return this.play().then(() =&gt; {
+      if (this._queue.length) {
+        return this.playQueue();
+      }
+    });
+  }
+
+  stop() {
+    return new Promise((resolve, reject) =&gt; {
+        if (this._currentSource) {
+          this._currentSource.onended = function() {};
+          this._currentSource.stop();
+        }
+
+        if (this._audio) {
+          this._audio.onended = function() {};
+          this._audio.currentTime = 0;
+          this._audio.pause();
+        }
+
+        this._log('Stop audio');
+        this.emit(Player.EventTypes.STOP);
+    });
+  }
+
+  pause() {
+    return new Promise((resolve, reject) =&gt; {
+        if (this._currentSource &amp;&amp; this._context.state === 'running') {
+          this._context.suspend();
+        }
+
+        if (this._audio) {
+          this._audio.pause();
+        }
+
+        this._log('Pause audio');
+        this.emit(Player.EventTypes.PAUSE);
+    });
+  }
+
+  replay() {
+    return new Promise((resolve, reject) =&gt; {
+        if (this._currentBuffer) {
+          this._log('Replay audio');
+          this.emit(Player.EventTypes.REPLAY);
+
+          if (this._context.state === 'suspended') {
+            this._context.resume();
+          }
+
+          if (this._currentSource) {
+            this._currentSource.stop();
+            this._currentSource.onended = function() {};
+          }
+          return this.playAudioBuffer(this._currentBuffer);
+        } else if (this._audio) {
+          this._log('Replay audio');
+          this.emit(Player.EventTypes.REPLAY);
+          return this.playUrl(this._audio.src);
+        } else {
+          const error = new Error('No audio source loaded.');
+          this.emit('error', error)
+          reject();
+        }
+    });
+  }
+
+  playBlob(blob) {
+    return new Promise((resolve, reject) =&gt; {
+      if (!blob) {
+        reject();
+      }
+
+      const objectUrl = URL.createObjectURL(blob);
+      const audio = new Audio();
+      audio.src = objectUrl;
+      this._currentBuffer = null;
+      this._currentSource = null;
+      this._audio = audio;
+
+      audio.onended = () =&gt; {
+        this._log('Audio ended');
+        this.emit(Player.EventTypes.ENDED);
+        resolve();
+      };
+
+      audio.onerror = (error) =&gt; {
+        this.emit('error', error);
+        reject(error);
+      };
+
+      audio.onload = (event) =&gt; {
+        URL.revokeObjectUrl(objectUrl);
+      };
+
+      audio.play();
+    });
+  }
+
+  playAudioBuffer(buffer) {
+    return new Promise((resolve, reject) =&gt; {
+      if (!buffer) {
+        reject();
+      }
+
+      const source = this._context.createBufferSource();
+      source.buffer = buffer;
+      source.connect(this._context.destination);
+      source.start(0);
+      this._currentBuffer = buffer;
+      this._currentSource = source;
+      this._audio = null;
+
+      source.onended = (event) =&gt; {
+        this._log('Audio ended');
+        this.emit(Player.EventTypes.ENDED);
+        resolve();
+      };
+
+      source.onerror = (error) =&gt; {
+        this.emit('error', error);
+        reject(error);
+      };
+    });
+  }
+
+  playUrl(url) {
+    return new Promise((resolve, reject) =&gt; {
+      const audio = new Audio();
+      audio.src = url;
+      this._currentBuffer = null;
+      this._currentSource = null;
+      this._audio = audio;
+
+      audio.onended = (event) =&gt; {
+        this._log('Audio ended');
+        this.emit(Player.EventTypes.ENDED);
+        resolve();
+      };
+
+      audio.onerror = (error) =&gt; {
+        this.emit('error', error);
+        reject(error);
+      };
+
+      audio.play();
+    });
+  }
+
+  static get EventTypes() {
+    return {
+      LOG: 'log',
+      ERROR: 'error',
+      PLAY: 'play',
+      REPLAY: 'replay',
+      PAUSE: 'pause',
+      STOP: 'pause',
+      ENQUEUE: 'enqueue',
+      DEQUE: 'deque'
+    };
+  }
+}
+
+window.Player = Player;
+]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-09-01 12:22:17&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;f4647ed237e92e0054db43ba54990e49&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;avs.Player.js&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_f4647ed237e92e0054db43ba54990e49&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-09-02 19:04:40&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Alexa Changes">cf28697a37616e0054db43ba54990eb5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-09-02 20:04:08</sys_created_on>
+<sys_id>8328697a37616e0054db43ba54990eb7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-09-02 20:04:08</sys_updated_on>
+<table/>
+<target_name>avs.Player.js</target_name>
+<type>UI Script</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_script_610f729637e92e0054db43ba54990e8e</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;requireJS.js&lt;/name&gt;&lt;script&gt;&lt;![CDATA[/*
+ RequireJS 2.2.0 Copyright jQuery Foundation and other contributors.
+ Released under MIT license, http://github.com/requirejs/requirejs/LICENSE
+*/
+var requirejs,require,define;
+(function(ga){function ka(b,c,d,g){return g||""}function K(b){return"[object Function]"===Q.call(b)}function L(b){return"[object Array]"===Q.call(b)}function y(b,c){if(b){var d;for(d=0;d&lt;b.length&amp;&amp;(!b[d]||!c(b[d],d,b));d+=1);}}function X(b,c){if(b){var d;for(d=b.length-1;-1&lt;d&amp;&amp;(!b[d]||!c(b[d],d,b));--d);}}function x(b,c){return la.call(b,c)}function e(b,c){return x(b,c)&amp;&amp;b[c]}function D(b,c){for(var d in b)if(x(b,d)&amp;&amp;c(b[d],d))break}function Y(b,c,d,g){c&amp;&amp;D(c,function(c,e){if(d||!x(b,e))!g||"object"!==
+typeof c||!c||L(c)||K(c)||c instanceof RegExp?b[e]=c:(b[e]||(b[e]={}),Y(b[e],c,d,g))});return b}function z(b,c){return function(){return c.apply(b,arguments)}}function ha(b){throw b;}function ia(b){if(!b)return b;var c=ga;y(b.split("."),function(b){c=c[b]});return c}function F(b,c,d,g){c=Error(c+"\nhttp://requirejs.org/docs/errors.html#"+b);c.requireType=b;c.requireModules=g;d&amp;&amp;(c.originalError=d);return c}function ma(b){function c(a,n,b){var h,k,f,c,d,l,g,r;n=n&amp;&amp;n.split("/");var q=p.map,m=q&amp;&amp;q["*"];
+if(a){a=a.split("/");k=a.length-1;p.nodeIdCompat&amp;&amp;U.test(a[k])&amp;&amp;(a[k]=a[k].replace(U,""));"."===a[0].charAt(0)&amp;&amp;n&amp;&amp;(k=n.slice(0,n.length-1),a=k.concat(a));k=a;for(f=0;f&lt;k.length;f++)c=k[f],"."===c?(k.splice(f,1),--f):".."===c&amp;&amp;0!==f&amp;&amp;(1!==f||".."!==k[2])&amp;&amp;".."!==k[f-1]&amp;&amp;0&lt;f&amp;&amp;(k.splice(f-1,2),f-=2);a=a.join("/")}if(b&amp;&amp;q&amp;&amp;(n||m)){k=a.split("/");f=k.length;a:for(;0&lt;f;--f){d=k.slice(0,f).join("/");if(n)for(c=n.length;0&lt;c;--c)if(b=e(q,n.slice(0,c).join("/")))if(b=e(b,d)){h=b;l=f;break a}!g&amp;&amp;m&amp;&amp;e(m,d)&amp;&amp;
+(g=e(m,d),r=f)}!h&amp;&amp;g&amp;&amp;(h=g,l=r);h&amp;&amp;(k.splice(0,l,h),a=k.join("/"))}return(h=e(p.pkgs,a))?h:a}function d(a){E&amp;&amp;y(document.getElementsByTagName("script"),function(n){if(n.getAttribute("data-requiremodule")===a&amp;&amp;n.getAttribute("data-requirecontext")===l.contextName)return n.parentNode.removeChild(n),!0})}function m(a){var n=e(p.paths,a);if(n&amp;&amp;L(n)&amp;&amp;1&lt;n.length)return n.shift(),l.require.undef(a),l.makeRequire(null,{skipMap:!0})([a]),!0}function r(a){var n,b=a?a.indexOf("!"):-1;-1&lt;b&amp;&amp;(n=a.substring(0,
+b),a=a.substring(b+1,a.length));return[n,a]}function q(a,n,b,h){var k,f,d=null,g=n?n.name:null,p=a,q=!0,m="";a||(q=!1,a="_@r"+(Q+=1));a=r(a);d=a[0];a=a[1];d&amp;&amp;(d=c(d,g,h),f=e(v,d));a&amp;&amp;(d?m=f&amp;&amp;f.normalize?f.normalize(a,function(a){return c(a,g,h)}):-1===a.indexOf("!")?c(a,g,h):a:(m=c(a,g,h),a=r(m),d=a[0],m=a[1],b=!0,k=l.nameToUrl(m)));b=!d||f||b?"":"_unnormalized"+(T+=1);return{prefix:d,name:m,parentMap:n,unnormalized:!!b,url:k,originalName:p,isDefine:q,id:(d?d+"!"+m:m)+b}}function u(a){var b=a.id,
+c=e(t,b);c||(c=t[b]=new l.Module(a));return c}function w(a,b,c){var h=a.id,k=e(t,h);if(!x(v,h)||k&amp;&amp;!k.defineEmitComplete)if(k=u(a),k.error&amp;&amp;"error"===b)c(k.error);else k.on(b,c);else"defined"===b&amp;&amp;c(v[h])}function A(a,b){var c=a.requireModules,h=!1;if(b)b(a);else if(y(c,function(b){if(b=e(t,b))b.error=a,b.events.error&amp;&amp;(h=!0,b.emit("error",a))}),!h)g.onError(a)}function B(){V.length&amp;&amp;(y(V,function(a){var b=a[0];"string"===typeof b&amp;&amp;(l.defQueueMap[b]=!0);G.push(a)}),V=[])}function C(a){delete t[a];
+delete Z[a]}function J(a,b,c){var h=a.map.id;a.error?a.emit("error",a.error):(b[h]=!0,y(a.depMaps,function(h,f){var d=h.id,g=e(t,d);!g||a.depMatched[f]||c[d]||(e(b,d)?(a.defineDep(f,v[d]),a.check()):J(g,b,c))}),c[h]=!0)}function H(){var a,b,c=(a=1E3*p.waitSeconds)&amp;&amp;l.startTime+a&lt;(new Date).getTime(),h=[],k=[],f=!1,g=!0;if(!aa){aa=!0;D(Z,function(a){var l=a.map,e=l.id;if(a.enabled&amp;&amp;(l.isDefine||k.push(a),!a.error))if(!a.inited&amp;&amp;c)m(e)?f=b=!0:(h.push(e),d(e));else if(!a.inited&amp;&amp;a.fetched&amp;&amp;l.isDefine&amp;&amp;
+(f=!0,!l.prefix))return g=!1});if(c&amp;&amp;h.length)return a=F("timeout","Load timeout for modules: "+h,null,h),a.contextName=l.contextName,A(a);g&amp;&amp;y(k,function(a){J(a,{},{})});c&amp;&amp;!b||!f||!E&amp;&amp;!ja||ba||(ba=setTimeout(function(){ba=0;H()},50));aa=!1}}function I(a){x(v,a[0])||u(q(a[0],null,!0)).init(a[1],a[2])}function O(a){a=a.currentTarget||a.srcElement;var b=l.onScriptLoad;a.detachEvent&amp;&amp;!ca?a.detachEvent("onreadystatechange",b):a.removeEventListener("load",b,!1);b=l.onScriptError;a.detachEvent&amp;&amp;!ca||a.removeEventListener("error",
+b,!1);return{node:a,id:a&amp;&amp;a.getAttribute("data-requiremodule")}}function P(){var a;for(B();G.length;){a=G.shift();if(null===a[0])return A(F("mismatch","Mismatched anonymous define() module: "+a[a.length-1]));I(a)}l.defQueueMap={}}var aa,da,l,R,ba,p={waitSeconds:7,baseUrl:"./",paths:{},bundles:{},pkgs:{},shim:{},config:{}},t={},Z={},ea={},G=[],v={},W={},fa={},Q=1,T=1;R={require:function(a){return a.require?a.require:a.require=l.makeRequire(a.map)},exports:function(a){a.usingExports=!0;if(a.map.isDefine)return a.exports?
+v[a.map.id]=a.exports:a.exports=v[a.map.id]={}},module:function(a){return a.module?a.module:a.module={id:a.map.id,uri:a.map.url,config:function(){return e(p.config,a.map.id)||{}},exports:a.exports||(a.exports={})}}};da=function(a){this.events=e(ea,a.id)||{};this.map=a;this.shim=e(p.shim,a.id);this.depExports=[];this.depMaps=[];this.depMatched=[];this.pluginMaps={};this.depCount=0};da.prototype={init:function(a,b,c,h){h=h||{};if(!this.inited){this.factory=b;if(c)this.on("error",c);else this.events.error&amp;&amp;
+(c=z(this,function(a){this.emit("error",a)}));this.depMaps=a&amp;&amp;a.slice(0);this.errback=c;this.inited=!0;this.ignore=h.ignore;h.enabled||this.enabled?this.enable():this.check()}},defineDep:function(a,b){this.depMatched[a]||(this.depMatched[a]=!0,--this.depCount,this.depExports[a]=b)},fetch:function(){if(!this.fetched){this.fetched=!0;l.startTime=(new Date).getTime();var a=this.map;if(this.shim)l.makeRequire(this.map,{enableBuildCallback:!0})(this.shim.deps||[],z(this,function(){return a.prefix?this.callPlugin():
+this.load()}));else return a.prefix?this.callPlugin():this.load()}},load:function(){var a=this.map.url;W[a]||(W[a]=!0,l.load(this.map.id,a))},check:function(){if(this.enabled&amp;&amp;!this.enabling){var a,b,c=this.map.id;b=this.depExports;var h=this.exports,k=this.factory;if(!this.inited)x(l.defQueueMap,c)||this.fetch();else if(this.error)this.emit("error",this.error);else if(!this.defining){this.defining=!0;if(1&gt;this.depCount&amp;&amp;!this.defined){if(K(k)){if(this.events.error&amp;&amp;this.map.isDefine||g.onError!==
+ha)try{h=l.execCb(c,k,b,h)}catch(d){a=d}else h=l.execCb(c,k,b,h);this.map.isDefine&amp;&amp;void 0===h&amp;&amp;((b=this.module)?h=b.exports:this.usingExports&amp;&amp;(h=this.exports));if(a)return a.requireMap=this.map,a.requireModules=this.map.isDefine?[this.map.id]:null,a.requireType=this.map.isDefine?"define":"require",A(this.error=a)}else h=k;this.exports=h;if(this.map.isDefine&amp;&amp;!this.ignore&amp;&amp;(v[c]=h,g.onResourceLoad)){var f=[];y(this.depMaps,function(a){f.push(a.normalizedMap||a)});g.onResourceLoad(l,this.map,f)}C(c);
+this.defined=!0}this.defining=!1;this.defined&amp;&amp;!this.defineEmitted&amp;&amp;(this.defineEmitted=!0,this.emit("defined",this.exports),this.defineEmitComplete=!0)}}},callPlugin:function(){var a=this.map,b=a.id,d=q(a.prefix);this.depMaps.push(d);w(d,"defined",z(this,function(h){var k,f,d=e(fa,this.map.id),M=this.map.name,r=this.map.parentMap?this.map.parentMap.name:null,m=l.makeRequire(a.parentMap,{enableBuildCallback:!0});if(this.map.unnormalized){if(h.normalize&amp;&amp;(M=h.normalize(M,function(a){return c(a,r,!0)})||
+""),f=q(a.prefix+"!"+M,this.map.parentMap),w(f,"defined",z(this,function(a){this.map.normalizedMap=f;this.init([],function(){return a},null,{enabled:!0,ignore:!0})})),h=e(t,f.id)){this.depMaps.push(f);if(this.events.error)h.on("error",z(this,function(a){this.emit("error",a)}));h.enable()}}else d?(this.map.url=l.nameToUrl(d),this.load()):(k=z(this,function(a){this.init([],function(){return a},null,{enabled:!0})}),k.error=z(this,function(a){this.inited=!0;this.error=a;a.requireModules=[b];D(t,function(a){0===
+a.map.id.indexOf(b+"_unnormalized")&amp;&amp;C(a.map.id)});A(a)}),k.fromText=z(this,function(h,c){var d=a.name,f=q(d),M=S;c&amp;&amp;(h=c);M&amp;&amp;(S=!1);u(f);x(p.config,b)&amp;&amp;(p.config[d]=p.config[b]);try{g.exec(h)}catch(e){return A(F("fromtexteval","fromText eval for "+b+" failed: "+e,e,[b]))}M&amp;&amp;(S=!0);this.depMaps.push(f);l.completeLoad(d);m([d],k)}),h.load(a.name,m,k,p))}));l.enable(d,this);this.pluginMaps[d.id]=d},enable:function(){Z[this.map.id]=this;this.enabling=this.enabled=!0;y(this.depMaps,z(this,function(a,
+b){var c,h;if("string"===typeof a){a=q(a,this.map.isDefine?this.map:this.map.parentMap,!1,!this.skipMap);this.depMaps[b]=a;if(c=e(R,a.id)){this.depExports[b]=c(this);return}this.depCount+=1;w(a,"defined",z(this,function(a){this.undefed||(this.defineDep(b,a),this.check())}));this.errback?w(a,"error",z(this,this.errback)):this.events.error&amp;&amp;w(a,"error",z(this,function(a){this.emit("error",a)}))}c=a.id;h=t[c];x(R,c)||!h||h.enabled||l.enable(a,this)}));D(this.pluginMaps,z(this,function(a){var b=e(t,a.id);
+b&amp;&amp;!b.enabled&amp;&amp;l.enable(a,this)}));this.enabling=!1;this.check()},on:function(a,b){var c=this.events[a];c||(c=this.events[a]=[]);c.push(b)},emit:function(a,b){y(this.events[a],function(a){a(b)});"error"===a&amp;&amp;delete this.events[a]}};l={config:p,contextName:b,registry:t,defined:v,urlFetched:W,defQueue:G,defQueueMap:{},Module:da,makeModuleMap:q,nextTick:g.nextTick,onError:A,configure:function(a){a.baseUrl&amp;&amp;"/"!==a.baseUrl.charAt(a.baseUrl.length-1)&amp;&amp;(a.baseUrl+="/");if("string"===typeof a.urlArgs){var b=
+a.urlArgs;a.urlArgs=function(a,c){return(-1===c.indexOf("?")?"?":"&amp;")+b}}var c=p.shim,h={paths:!0,bundles:!0,config:!0,map:!0};D(a,function(a,b){h[b]?(p[b]||(p[b]={}),Y(p[b],a,!0,!0)):p[b]=a});a.bundles&amp;&amp;D(a.bundles,function(a,b){y(a,function(a){a!==b&amp;&amp;(fa[a]=b)})});a.shim&amp;&amp;(D(a.shim,function(a,b){L(a)&amp;&amp;(a={deps:a});!a.exports&amp;&amp;!a.init||a.exportsFn||(a.exportsFn=l.makeShimExports(a));c[b]=a}),p.shim=c);a.packages&amp;&amp;y(a.packages,function(a){var b;a="string"===typeof a?{name:a}:a;b=a.name;a.location&amp;&amp;
+(p.paths[b]=a.location);p.pkgs[b]=a.name+"/"+(a.main||"main").replace(na,"").replace(U,"")});D(t,function(a,b){a.inited||a.map.unnormalized||(a.map=q(b,null,!0))});(a.deps||a.callback)&amp;&amp;l.require(a.deps||[],a.callback)},makeShimExports:function(a){return function(){var b;a.init&amp;&amp;(b=a.init.apply(ga,arguments));return b||a.exports&amp;&amp;ia(a.exports)}},makeRequire:function(a,n){function m(c,d,f){var e,r;n.enableBuildCallback&amp;&amp;d&amp;&amp;K(d)&amp;&amp;(d.__requireJsBuild=!0);if("string"===typeof c){if(K(d))return A(F("requireargs",
+"Invalid require call"),f);if(a&amp;&amp;x(R,c))return R[c](t[a.id]);if(g.get)return g.get(l,c,a,m);e=q(c,a,!1,!0);e=e.id;return x(v,e)?v[e]:A(F("notloaded",'Module name "'+e+'" has not been loaded yet for context: '+b+(a?"":". Use require([])")))}P();l.nextTick(function(){P();r=u(q(null,a));r.skipMap=n.skipMap;r.init(c,d,f,{enabled:!0});H()});return m}n=n||{};Y(m,{isBrowser:E,toUrl:function(b){var d,f=b.lastIndexOf("."),g=b.split("/")[0];-1!==f&amp;&amp;("."!==g&amp;&amp;".."!==g||1&lt;f)&amp;&amp;(d=b.substring(f,b.length),b=b.substring(0,
+f));return l.nameToUrl(c(b,a&amp;&amp;a.id,!0),d,!0)},defined:function(b){return x(v,q(b,a,!1,!0).id)},specified:function(b){b=q(b,a,!1,!0).id;return x(v,b)||x(t,b)}});a||(m.undef=function(b){B();var c=q(b,a,!0),f=e(t,b);f.undefed=!0;d(b);delete v[b];delete W[c.url];delete ea[b];X(G,function(a,c){a[0]===b&amp;&amp;G.splice(c,1)});delete l.defQueueMap[b];f&amp;&amp;(f.events.defined&amp;&amp;(ea[b]=f.events),C(b))});return m},enable:function(a){e(t,a.id)&amp;&amp;u(a).enable()},completeLoad:function(a){var b,c,d=e(p.shim,a)||{},g=d.exports;
+for(B();G.length;){c=G.shift();if(null===c[0]){c[0]=a;if(b)break;b=!0}else c[0]===a&amp;&amp;(b=!0);I(c)}l.defQueueMap={};c=e(t,a);if(!b&amp;&amp;!x(v,a)&amp;&amp;c&amp;&amp;!c.inited)if(!p.enforceDefine||g&amp;&amp;ia(g))I([a,d.deps||[],d.exportsFn]);else return m(a)?void 0:A(F("nodefine","No define call for "+a,null,[a]));H()},nameToUrl:function(a,b,c){var d,k,f,m;(d=e(p.pkgs,a))&amp;&amp;(a=d);if(d=e(fa,a))return l.nameToUrl(d,b,c);if(g.jsExtRegExp.test(a))d=a+(b||"");else{d=p.paths;k=a.split("/");for(f=k.length;0&lt;f;--f)if(m=k.slice(0,f).join("/"),
+m=e(d,m)){L(m)&amp;&amp;(m=m[0]);k.splice(0,f,m);break}d=k.join("/");d+=b||(/^data\:|^blob\:|\?/.test(d)||c?"":".js");d=("/"===d.charAt(0)||d.match(/^[\w\+\.\-]+:/)?"":p.baseUrl)+d}return p.urlArgs&amp;&amp;!/^blob\:/.test(d)?d+p.urlArgs(a,d):d},load:function(a,b){g.load(l,a,b)},execCb:function(a,b,c,d){return b.apply(d,c)},onScriptLoad:function(a){if("load"===a.type||oa.test((a.currentTarget||a.srcElement).readyState))N=null,a=O(a),l.completeLoad(a.id)},onScriptError:function(a){var b=O(a);if(!m(b.id)){var c=[];
+D(t,function(a,d){0!==d.indexOf("_@r")&amp;&amp;y(a.depMaps,function(a){if(a.id===b.id)return c.push(d),!0})});return A(F("scripterror",'Script error for "'+b.id+(c.length?'", needed by: '+c.join(", "):'"'),a,[b.id]))}}};l.require=l.makeRequire();return l}function pa(){if(N&amp;&amp;"interactive"===N.readyState)return N;X(document.getElementsByTagName("script"),function(b){if("interactive"===b.readyState)return N=b});return N}var g,B,C,H,O,I,N,P,u,T,qa=/(\/\*([\s\S]*?)\*\/|([^:]|^)\/\/(.*)$)/mg,ra=/[^.]\s*require\s*\(\s*["']([^'"\s]+)["']\s*\)/g,
+U=/\.js$/,na=/^\.\//;B=Object.prototype;var Q=B.toString,la=B.hasOwnProperty,E=!("undefined"===typeof window||"undefined"===typeof navigator||!window.document),ja=!E&amp;&amp;"undefined"!==typeof importScripts,oa=E&amp;&amp;"PLAYSTATION 3"===navigator.platform?/^complete$/:/^(complete|loaded)$/,ca="undefined"!==typeof opera&amp;&amp;"[object Opera]"===opera.toString(),J={},w={},V=[],S=!1;if("undefined"===typeof define){if("undefined"!==typeof requirejs){if(K(requirejs))return;w=requirejs;requirejs=void 0}"undefined"===typeof require||
+K(require)||(w=require,require=void 0);g=requirejs=function(b,c,d,m){var r,q="_";L(b)||"string"===typeof b||(r=b,L(c)?(b=c,c=d,d=m):b=[]);r&amp;&amp;r.context&amp;&amp;(q=r.context);(m=e(J,q))||(m=J[q]=g.s.newContext(q));r&amp;&amp;m.configure(r);return m.require(b,c,d)};g.config=function(b){return g(b)};g.nextTick="undefined"!==typeof setTimeout?function(b){setTimeout(b,4)}:function(b){b()};require||(require=g);g.version="2.2.0";g.jsExtRegExp=/^\/|:|\?|\.js$/;g.isBrowser=E;B=g.s={contexts:J,newContext:ma};g({});y(["toUrl",
+"undef","defined","specified"],function(b){g[b]=function(){var c=J._;return c.require[b].apply(c,arguments)}});E&amp;&amp;(C=B.head=document.getElementsByTagName("head")[0],H=document.getElementsByTagName("base")[0])&amp;&amp;(C=B.head=H.parentNode);g.onError=ha;g.createNode=function(b,c,d){c=b.xhtml?document.createElementNS("http://www.w3.org/1999/xhtml","html:script"):document.createElement("script");c.type=b.scriptType||"text/javascript";c.charset="utf-8";c.async=!0;return c};g.load=function(b,c,d){var m=b&amp;&amp;b.config||
+{},e;if(E){e=g.createNode(m,c,d);e.setAttribute("data-requirecontext",b.contextName);e.setAttribute("data-requiremodule",c);!e.attachEvent||e.attachEvent.toString&amp;&amp;0&gt;e.attachEvent.toString().indexOf("[native code")||ca?(e.addEventListener("load",b.onScriptLoad,!1),e.addEventListener("error",b.onScriptError,!1)):(S=!0,e.attachEvent("onreadystatechange",b.onScriptLoad));e.src=d;if(m.onNodeCreated)m.onNodeCreated(e,m,c,d);P=e;H?C.insertBefore(e,H):C.appendChild(e);P=null;return e}if(ja)try{setTimeout(function(){},
+0),importScripts(d),b.completeLoad(c)}catch(q){b.onError(F("importscripts","importScripts failed for "+c+" at "+d,q,[c]))}};E&amp;&amp;!w.skipDataMain&amp;&amp;X(document.getElementsByTagName("script"),function(b){C||(C=b.parentNode);if(O=b.getAttribute("data-main"))return u=O,w.baseUrl||-1!==u.indexOf("!")||(I=u.split("/"),u=I.pop(),T=I.length?I.join("/")+"/":"./",w.baseUrl=T),u=u.replace(U,""),g.jsExtRegExp.test(u)&amp;&amp;(u=O),w.deps=w.deps?w.deps.concat(u):[u],!0});define=function(b,c,d){var e,g;"string"!==typeof b&amp;&amp;
+(d=c,c=b,b=null);L(c)||(d=c,c=null);!c&amp;&amp;K(d)&amp;&amp;(c=[],d.length&amp;&amp;(d.toString().replace(qa,ka).replace(ra,function(b,d){c.push(d)}),c=(1===d.length?["require"]:["require","exports","module"]).concat(c)));S&amp;&amp;(e=P||pa())&amp;&amp;(b||(b=e.getAttribute("data-requiremodule")),g=J[e.getAttribute("data-requirecontext")]);g?(g.defQueue.push([b,c,d]),g.defQueueMap[b]=!0):V.push([b,c,d])};define.amd={jQuery:!0};g.exec=function(b){return eval(b)};g(w)}})(this);]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-09-01 13:06:58&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;610f729637e92e0054db43ba54990e8e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;requireJS.js&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_610f729637e92e0054db43ba54990e8e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-09-01 13:06:58&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Alexa Changes">cf28697a37616e0054db43ba54990eb5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-09-02 20:04:08</sys_created_on>
+<sys_id>8728697a37616e0054db43ba54990eb6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-09-02 20:04:08</sys_updated_on>
+<table/>
+<target_name>requireJS.js</target_name>
+<type>UI Script</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_script_9099725637e92e0054db43ba54990e48</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;avs.utils.typedArrayToAudioBuffer.js&lt;/name&gt;&lt;script&gt;&lt;![CDATA['use strict';
+
+function typedArrayToAudioBuffer(typedArray, context) {
+  window.AudioContext = window.AudioContext || window.webkitAudioContext;
+
+  return new Promise((resolve, reject) =&gt; {
+
+    if (context) {
+      if (Object.prototype.toString.call(context) !== '[object AudioContext]') {
+        throw new TypeError('`context` must be an AudioContext');
+      }
+    } else {
+      context = new AudioContext();
+    }
+
+    const arrayBuffer = new ArrayBuffer(typedArray.byteLength);
+    new Uint8Array(arrayBuffer).set(new Uint8Array(typedArray));
+
+    context.decodeAudioData(arrayBuffer, resolve, reject);
+  });
+}
+
+window.typedArrayToAudioBuffer = typedArrayToAudioBuffer;]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-09-01 12:42:48&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;9099725637e92e0054db43ba54990e48&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;avs.utils.typedArrayToAudioBuffer.js&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_9099725637e92e0054db43ba54990e48&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-09-02 12:59:41&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Alexa Changes">cf28697a37616e0054db43ba54990eb5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-09-02 20:04:08</sys_created_on>
+<sys_id>8b28697a37616e0054db43ba54990eb6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-09-02 20:04:08</sys_updated_on>
+<table/>
+<target_name>avs.utils.typedArrayToAudioBuffer.js</target_name>
+<type>UI Script</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_script_c4f9f25637e92e0054db43ba54990e57</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;avs.utils.writeUTFBytes.js&lt;/name&gt;&lt;script&gt;&lt;![CDATA['use strict';
+
+/**
+ * @credit https://github.com/mattdiamond/Recorderjs
+ */
+function writeUTFBytes(view, offset, string) {
+  const length = string.length;
+
+  for (let i = 0; i &lt; length; i++){
+    view.setUint8(offset + i, string.charCodeAt(i));
+  }
+}
+
+window.writeUTFBytes = writeUTFBytes;]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-09-01 12:44:25&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;c4f9f25637e92e0054db43ba54990e57&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;avs.utils.writeUTFBytes.js&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_c4f9f25637e92e0054db43ba54990e57&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-09-02 13:07:44&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Alexa Changes">cf28697a37616e0054db43ba54990eb5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-09-02 20:04:08</sys_created_on>
+<sys_id>8f28697a37616e0054db43ba54990eb6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-09-02 20:04:08</sys_updated_on>
+<table/>
+<target_name>avs.utils.writeUTFBytes.js</target_name>
+<type>UI Script</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_script_3475b21637e92e0054db43ba54990e03</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;avs.AVSErrorCodes.js&lt;/name&gt;&lt;script&gt;&lt;![CDATA['use strict';
+var AMAZON_ERROR_CODES = {};
+AMAZON_ERROR_CODES.InvalidAccessTokenException = 'com.amazon.alexahttpproxy.exceptions.InvalidAccessTokenException']]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-09-01 12:24:49&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;3475b21637e92e0054db43ba54990e03&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;avs.AVSErrorCodes.js&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_3475b21637e92e0054db43ba54990e03&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-09-02 19:09:15&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Alexa Changes">cf28697a37616e0054db43ba54990eb5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-09-02 20:04:08</sys_created_on>
+<sys_id>c328697a37616e0054db43ba54990eb6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-09-02 20:04:08</sys_updated_on>
+<table/>
+<target_name>avs.AVSErrorCodes.js</target_name>
+<type>UI Script</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_section_7b896abf0a0a0b08006074405f3d14d5</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="7b896abf0a0a0b08006074405f3d14d5" sys_domain="global" table="sys_ui_script" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>script_name</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2016-09-01 12:25:48</sys_created_on><sys_id>17a5fed237e92e0054db43ba54990ee1</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="sys_ui_script" sys_domain="global" view="Default view                    ">7b896abf0a0a0b08006074405f3d14d5</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2016-09-01 12:25:48</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>name</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2016-09-01 12:25:48</sys_created_on><sys_id>57a5fed237e92e0054db43ba54990ee1</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="sys_ui_script" sys_domain="global" view="Default view                    ">7b896abf0a0a0b08006074405f3d14d5</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2016-09-01 12:25:48</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>global</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2016-09-01 12:25:48</sys_created_on><sys_id>97a5fed237e92e0054db43ba54990ee1</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="sys_ui_script" sys_domain="global" view="Default view                    ">7b896abf0a0a0b08006074405f3d14d5</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2016-09-01 12:25:48</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2016-09-01 12:25:48</sys_created_on><sys_id>d7a5fed237e92e0054db43ba54990ee1</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="sys_ui_script" sys_domain="global" view="Default view                    ">7b896abf0a0a0b08006074405f3d14d5</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2016-09-01 12:25:48</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>sys_scope</element><position>4</position><sys_created_by>admin</sys_created_by><sys_created_on>2016-09-01 12:25:48</sys_created_on><sys_id>1ba5fed237e92e0054db43ba54990ee1</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="sys_ui_script" sys_domain="global" view="Default view                    ">7b896abf0a0a0b08006074405f3d14d5</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2016-09-01 12:25:48</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>active</element><position>5</position><sys_created_by>admin</sys_created_by><sys_created_on>2016-09-01 12:25:48</sys_created_on><sys_id>5ba5fed237e92e0054db43ba54990ee1</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="sys_ui_script" sys_domain="global" view="Default view                    ">7b896abf0a0a0b08006074405f3d14d5</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2016-09-01 12:25:48</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.end_split</element><position>6</position><sys_created_by>admin</sys_created_by><sys_created_on>2016-09-01 12:25:48</sys_created_on><sys_id>9ba5fed237e92e0054db43ba54990ee1</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="sys_ui_script" sys_domain="global" view="Default view                    ">7b896abf0a0a0b08006074405f3d14d5</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2016-09-01 12:25:48</sys_updated_on><sys_user/><type>.end_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>description</element><position>7</position><sys_created_by>admin</sys_created_by><sys_created_on>2016-09-01 12:25:48</sys_created_on><sys_id>dba5fed237e92e0054db43ba54990ee1</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="sys_ui_script" sys_domain="global" view="Default view                    ">7b896abf0a0a0b08006074405f3d14d5</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2016-09-01 12:25:48</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>script</element><position>8</position><sys_created_by>admin</sys_created_by><sys_created_on>2016-09-01 12:25:48</sys_created_on><sys_id>1fa5fed237e92e0054db43ba54990ee1</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="sys_ui_script" sys_domain="global" view="Default view                    ">7b896abf0a0a0b08006074405f3d14d5</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2016-09-01 12:25:48</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>REL.sys_ui_script.REL:67bdac52374010008687ddb1967334ee</element><position>9</position><sys_created_by>admin</sys_created_by><sys_created_on>2016-09-01 12:25:48</sys_created_on><sys_id>5fa5fed237e92e0054db43ba54990ee1</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="sys_ui_script" sys_domain="global" view="Default view                    ">7b896abf0a0a0b08006074405f3d14d5</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2016-09-01 12:25:48</sys_updated_on><sys_user/><type>list</type></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>sys_ui_script</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>glide.maint</sys_created_by><sys_created_on>2008-09-19 16:55:15</sys_created_on><sys_customer_update>false</sys_customer_update><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>7b896abf0a0a0b08006074405f3d14d5</sys_id><sys_mod_count>1</sys_mod_count><sys_name>sys_ui_script</sys_name><sys_overrides display_value="">global                          </sys_overrides><sys_package display_value="UI Pages (define HTML pages and their processing)" source="com.glide.ui_page">f7ba77003730220054db43ba54990e66</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_section_7b896abf0a0a0b08006074405f3d14d5</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2016-09-01 12:25:48</sys_updated_on><sys_user/><title>true</title><view display_value="Default view" name="NULL">Default view                    </view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+<remote_update_set display_value="Alexa Changes">cf28697a37616e0054db43ba54990eb5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-09-02 20:04:08</sys_created_on>
+<sys_id>c328697a37616e0054db43ba54990eb7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-09-02 20:04:08</sys_updated_on>
+<table>sys_ui_script</table>
+<target_name>UI Script</target_name>
+<type>Form Layout</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_script_6595fed237e92e0054db43ba54990ede</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;avs.AVS.js&lt;/name&gt;&lt;script&gt;&lt;![CDATA[class AVS {
+  constructor(options = {}) {
+    Observable(this);
+
+    this._bufferSize = 2048;
+    this._inputChannels = 1;
+    this._outputChannels = 1;
+    this._leftChannel = [];
+    this._rightChannel = [];
+    this._audioContext = null;
+    this._recorder = null;
+    this._sampleRate = null;
+    this._outputSampleRate = 16000;
+    this._audioInput = null;
+    this._volumeNode = null;
+    this._debug = false;
+    this._token = null;
+    this._refreshToken = null;
+    this._clientId = null;
+    this._clientSecret = null;
+    this._deviceId= null;
+    this._deviceSerialNumber = null;
+    this._redirectUri = null;
+    this._audioQueue = [];
+
+    if (options.token) {
+      this.setToken(options.token);
+    }
+
+    if (options.refreshToken) {
+      this.setRefreshToken(options.refreshToken);
+    }
+
+    if (options.clientId) {
+      this.setClientId(options.clientId);
+    }
+
+    if (options.clientSecret) {
+      this.setClientSecret(options.clientSecret);
+    }
+
+    if (options.deviceId) {
+      this.setDeviceId(options.deviceId);
+    }
+
+    if (options.deviceSerialNumber) {
+      this.setDeviceSerialNumber(options.deviceSerialNumber);
+    }
+
+    if (options.redirectUri) {
+      this.setRedirectUri(options.redirectUri);
+    }
+
+    if (options.debug) {
+      this.setDebug(options.debug);
+    }
+
+    this.player = new Player();
+  }
+
+  _log(type, message) {
+    if (type &amp;&amp; !message) {
+      message = type;
+      type = 'log';
+    }
+
+    setTimeout(() =&gt; {
+      this.emit(AVS.EventTypes.LOG, message);
+    }, 0);
+
+    if (this._debug) {
+      console[type](message);
+    }
+  }
+
+  login(options = {}) {
+    return this.promptUserLogin(options);
+  }
+
+  logout() {
+    return new Promise((resolve, reject) =&gt; {
+      this._token = null;
+      this._refreshToken = null;
+      this.emit(AVS.EventTypes.LOGOUT);
+      this._log('Logged out');
+      resolve();
+    });
+  }
+
+  promptUserLogin(options = {responseType: 'token', newWindow: false}) {
+    return new Promise((resolve, reject) =&gt; {
+      if (typeof options.responseType === 'undefined') {
+        options.responseType = 'token';
+      }
+
+      if (typeof options.responseType !== 'string') {
+        const error = new Error('responseType must a string.');
+        this._log(error);
+        return reject(error);
+      }
+
+      const newWindow = !!options.newWindow;
+
+      const responseType = options.responseType;
+
+      if (!(responseType === 'code' || responseType === 'token')) {
+        const error = new Error('responseType must be either code or token.');
+        this._log(error);
+        return reject(error);
+      }
+
+      const scope = 'alexa:all';
+      const scopeData = {
+        [scope]: {
+          productID: this._deviceId,
+          productInstanceAttributes: {
+            deviceSerialNumber: this._deviceSerialNumber
+          }
+        }
+      };
+
+      const authUrl = 'https://www.amazon.com/ap/oa?client_id=' + this._clientId + '&amp;scope=' + encodeURIComponent(scope) + '&amp;scope_data=' + encodeURIComponent(JSON.stringify(scopeData)) + '&amp;response_type=' + responseType + '&amp;redirect_uri=' + encodeURI(this._redirectUri);
+
+      if (newWindow) {
+        window.open(authUrl);
+      } else {
+        window.location.href = authUrl;
+      }
+    });
+  }
+
+  getTokenFromCode(code) {
+    return new Promise((resolve, reject) =&gt; {
+      if (typeof code !== 'string') {
+        const error = new TypeError('"code" must be a string.');
+        this._log(error);
+        return reject(error);
+      }
+
+      const grantType = 'authorization_code';
+      const postData = 'grant_type=' + grantType + '&amp;code=' + code + '&amp;client_id=' + this._clientId + '&amp;client_secret=' + this._clientSecret + '&amp;redirect_uri=' + encodeURIComponent(this._redirectUri);
+      const url = 'https://api.amazon.com/auth/o2/token';
+
+      const xhr = new XMLHttpRequest();
+
+      xhr.open('POST', url, true);
+      xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded;charset=UTF-8');
+      xhr.onload = (event) =&gt; {
+        let response = xhr.response;
+
+        try {
+          response = JSON.parse(xhr.response);
+        } catch (error) {
+          this._log(error);
+          return reject(error);
+        }
+
+        const isObject = response instanceof Object;
+        const errorDescription = isObject &amp;&amp; response.error_description;
+
+        if (errorDescription) {
+          const error = new Error(errorDescription);
+          this._log(error);
+          return reject(error);
+        }
+
+        const token = response.access_token;
+        const refreshToken = response.refresh_token;
+        const tokenType = response.token_type;
+        const expiresIn = response.expiresIn;
+
+        this.setToken(token)
+        this.setRefreshToken(refreshToken)
+
+        this.emit(AVS.EventTypes.LOGIN);
+        this._log('Logged in.');
+        resolve(response);
+      };
+
+      xhr.onerror = (error) =&gt; {
+        this._log(error);
+        reject(error);
+      };
+
+      xhr.send(postData);
+    });
+  }
+
+  refreshToken() {
+    return this.getTokenFromRefreshToken(this._refreshToken)
+    .then(() =&gt; {
+      return {
+        token: this._token,
+        refreshToken: this._refreshToken
+      };
+    });
+  }
+
+  getTokenFromRefreshToken(refreshToken = this._refreshToken) {
+    return new Promise((resolve, reject) =&gt; {
+      if (typeof refreshToken !== 'string') {
+        const error = new Error('"refreshToken" must a string.');
+        this._log(error);
+        return reject(error);
+      }
+
+      const grantType = 'refresh_token';
+      const postData = 'grant_type=' + grantType + '&amp;refresh_token=' + refreshToken + '&amp;client_id=' + this._clientId + '&amp;client_secret=' + this._clientSecret + '&amp;redirect_uri=' + encodeURIComponent(this._redirectUri);
+      const url = 'https://api.amazon.com/auth/o2/token';
+      const xhr = new XMLHttpRequest();
+
+      xhr.open('POST', url, true);
+      xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded;charset=UTF-8');
+      xhr.responseType = 'json';
+      xhr.onload = (event) =&gt; {
+        const response = xhr.response;
+
+        if (response.error) {
+          const error = response.error.message;
+          this.emit(AVS.EventTypes.ERROR, error);
+
+          return reject(error);
+        } else  {
+          const token = response.access_token;
+          const refreshToken = response.refresh_token;
+
+          this.setToken(token);
+          this.setRefreshToken(refreshToken);
+
+          return resolve(token);
+        }
+      };
+
+      xhr.onerror = (error) =&gt; {
+        this._log(error);
+        reject(error);
+      };
+
+      xhr.send(postData);
+    });
+  }
+
+  getTokenFromUrl() {
+    return new Promise((resolve, reject) =&gt; {
+      let hash = window.location.hash.substr(1);
+
+      const query = qs.parse(hash);
+      const token = query.access_token;
+      const refreshToken = query.refresh_token;
+      const tokenType = query.token_type;
+      const expiresIn = query.expiresIn;
+
+      if (token) {
+        this.setToken(token)
+        this.emit(AVS.EventTypes.LOGIN);
+        this._log('Logged in.');
+
+        if (refreshToken) {
+          this.setRefreshToken(refreshToken);
+        }
+
+        return resolve(token);
+      }
+
+      return reject();
+    });
+  }
+
+  getCodeFromUrl() {
+    return new Promise((resolve, reject) =&gt; {
+      const query = qs.parse(window.location.search.substr(1));
+      const code = query.code;
+
+      if (code) {
+        return resolve(code);
+      }
+
+      return reject(null);
+    });
+  }
+
+  setToken(token) {
+    return new Promise((resolve, reject) =&gt; {
+      if (typeof token === 'string') {
+        this._token = token;
+        this.emit(AVS.EventTypes.TOKEN_SET);
+        this._log('Token set.');
+        resolve(this._token);
+      } else {
+        const error = new TypeError('"token" must be a string.');
+        this._log(error);
+        reject(error);
+      }
+    });
+  }
+
+  setRefreshToken(refreshToken) {
+    return new Promise((resolve, reject) =&gt; {
+      if (typeof refreshToken === 'string') {
+        this._refreshToken = refreshToken;
+        this.emit(AVS.EventTypes.REFRESH_TOKEN_SET);
+        this._log('Refresh token set.');
+        resolve(this._refreshToken);
+      } else {
+        const error = new TypeError('"refreshToken" must be a string.');
+        this._log(error);
+        reject(error);
+      }
+    });
+  }
+
+  setClientId(clientId) {
+    return new Promise((resolve, reject) =&gt; {
+      if (typeof clientId === 'string') {
+        this._clientId = clientId;
+        resolve(this._clientId);
+      } else {
+        const error = new TypeError('"clientId" must be a string.');
+        this._log(error);
+        reject(error);
+      }
+    });
+  }
+
+  setClientSecret(clientSecret) {
+    return new Promise((resolve, reject) =&gt; {
+      if (typeof clientSecret === 'string') {
+        this._clientSecret = clientSecret;
+        resolve(this._clientSecret);
+      } else {
+        const error = new TypeError('"clientSecret" must be a string');
+        this._log(error);
+        reject(error);
+      }
+    });
+  }
+
+  setDeviceId(deviceId) {
+    return new Promise((resolve, reject) =&gt; {
+      if (typeof deviceId === 'string') {
+        this._deviceId = deviceId;
+        resolve(this._deviceId);
+      } else {
+        const error = new TypeError('"deviceId" must be a string.');
+        this._log(error);
+        reject(error);
+      }
+    });
+  }
+
+  setDeviceSerialNumber(deviceSerialNumber) {
+    return new Promise((resolve, reject) =&gt; {
+      if (typeof deviceSerialNumber === 'number' || typeof deviceSerialNumber === 'string') {
+        this._deviceSerialNumber = deviceSerialNumber;
+        resolve(this._deviceSerialNumber);
+      } else {
+        const error = new TypeError('"deviceSerialNumber" must be a number or string.');
+        this._log(error);
+        reject(error);
+      }
+    });
+  }
+
+  setRedirectUri(redirectUri) {
+    return new Promise((resolve, reject) =&gt; {
+      if (typeof redirectUri === 'string') {
+        this._redirectUri = redirectUri;
+        resolve(this._redirectUri);
+      } else {
+        const error = new TypeError('"redirectUri" must be a string.');
+        this._log(error);
+        reject(error);
+      }
+    });
+  }
+
+  setDebug(debug) {
+    return new Promise((resolve, reject) =&gt; {
+      if (typeof debug === 'boolean') {
+        this._debug = debug;
+        resolve(this._debug);
+      } else {
+        const error = new TypeError('"debug" must be a boolean.');
+        this._log(error);
+        reject(error);
+      }
+    });
+  }
+
+  getToken() {
+    return new Promise((resolve, reject) =&gt; {
+      const token = this._token;
+
+      if (token) {
+        return resolve(token);
+      }
+
+      return reject();
+    });
+  }
+
+  getRefreshToken() {
+    return new Promise((resolve, reject) =&gt; {
+      const refreshToken = this._refreshToken;
+
+      if (refreshToken) {
+        return resolve(refreshToken);
+      }
+
+      return reject();
+    });
+  }
+
+  requestMic() {
+    return new Promise((resolve, reject) =&gt; {
+      this._log('Requesting microphone.');
+
+      // Ensure that the file can be loaded in environments where navigator is not defined (node servers)
+      if (!navigator.getUserMedia) {
+        navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia ||
+          navigator.mozGetUserMedia || navigator.msGetUserMedia;
+      }
+
+      navigator.getUserMedia({
+        audio: true
+      }, (stream) =&gt; {
+        this._log('Microphone connected.');
+        return this.connectMediaStream(stream).then(resolve);
+      }, (error) =&gt; {
+        this._log('error', error);
+        this.emit(AVS.EventTypes.ERROR, error);
+        return reject(error);
+      });
+    });
+  }
+
+  connectMediaStream(stream) {
+    return new Promise((resolve, reject) =&gt; {
+      const isMediaStream = Object.prototype.toString.call(stream) === '[object MediaStream]';
+
+      if (!isMediaStream) {
+        const error = new TypeError('Argument must be a "MediaStream" object.')
+        this._log('error', error)
+        this.emit(AVS.EventTypes.ERROR, error);
+        return reject(error);
+      }
+
+      this._audioContext = new AudioContext();
+      this._sampleRate = this._audioContext.sampleRate;
+
+      this._log("Sample rate: " + this._sampleRate + ".");
+
+      this._volumeNode = this._audioContext.createGain();
+      this._audioInput = this._audioContext.createMediaStreamSource(stream);
+
+      this._audioInput.connect(this._volumeNode);
+
+      this._recorder = this._audioContext.createScriptProcessor(this._bufferSize, this._inputChannels, this._outputChannels);
+
+      this._recorder.onaudioprocess = (event) =&gt; {
+        if (!this._isRecording) {
+          return false;
+        }
+
+        const left = event.inputBuffer.getChannelData(0);
+        this._leftChannel.push(new Float32Array(left));
+
+        if (this._inputChannels &gt; 1) {
+          const right = event.inputBuffer.getChannelData(1);
+          this._rightChannel.push(new Float32Array(right));
+        }
+
+        this._recordingLength += this._bufferSize;
+      };
+
+      this._volumeNode.connect(this._recorder);
+      this._recorder.connect(this._audioContext.destination);
+      this._log("Media stream connected.");
+
+      return resolve(stream);
+    });
+  }
+
+  startRecording() {
+    return new Promise((resolve, reject) =&gt; {
+      if (!this._audioInput) {
+        const error = new Error('No Media Stream connected.');
+        this._log('error', error);
+        this.emit(AVS.EventTypes.ERROR, error);
+        return reject(error);
+      }
+
+      this._isRecording = true;
+      this._leftChannel.length = this._rightChannel.length = 0;
+      this._recordingLength = 0;
+      this._log("Recording started.");
+      this.emit(AVS.EventTypes.RECORD_START);
+
+      return resolve();
+    });
+  }
+
+  stopRecording() {
+    return new Promise((resolve, reject) =&gt; {
+      if (!this._isRecording) {
+        this.emit(AVS.EventTypes.RECORD_STOP);
+        this._log('Recording stopped.');
+        return resolve();
+      }
+
+      this._isRecording = false;
+
+      const leftBuffer = mergeBuffers(this._leftChannel, this._recordingLength);
+      let interleaved = null;
+
+      if (this._outputChannels &gt; 1) {
+        const rightBuffer = mergeBuffers(this._rightChannel, this._recordingLength);
+        interleaved = interleave(leftBuffer, rightBuffer);
+      } else {
+        interleaved = interleave(leftBuffer);
+      }
+
+      interleaved = downsampleBuffer(interleaved, this._sampleRate, this._outputSampleRate);
+
+      const buffer = new ArrayBuffer(44 + interleaved.length * 2);
+      const view = new DataView(buffer);
+
+      /**
+       * @credit https://github.com/mattdiamond/Recorderjs
+       */
+      writeUTFBytes(view, 0, 'RIFF');
+      view.setUint32(4, 44 + interleaved.length * 2, true);
+      writeUTFBytes(view, 8, 'WAVE');
+      writeUTFBytes(view, 12, 'fmt ');
+      view.setUint32(16, 16, true);
+      view.setUint16(20, 1, true);
+      view.setUint16(22, this._outputChannels, true);
+      view.setUint32(24, this._outputSampleRate, true);
+      view.setUint32(28, this._outputSampleRate * 4, true);
+      view.setUint16(32, 4, true);
+      view.setUint16(34, 16, true);
+      writeUTFBytes(view, 36, 'data');
+      view.setUint32(40, interleaved.length * 2, true);
+
+      const length = interleaved.length;
+      const volume = 1;
+      let index = 44;
+
+      for (let i = 0; i &lt; length; i++){
+        view.setInt16(index, interleaved[i] * (0x7FFF * volume), true);
+        index += 2;
+      }
+
+      this._log("Recording stopped.");
+      this.emit(AVS.EventTypes.RECORD_STOP);
+      return resolve(view);
+    });
+  }
+
+  sendAudio (dataView) {
+    return new Promise((resolve, reject) =&gt; {
+      const xhr = new XMLHttpRequest();
+      const url = 'https://access-alexa-na.amazon.com/v1/avs/speechrecognizer/recognize';
+
+      xhr.open('POST', url, true);
+      xhr.responseType = 'arraybuffer';
+      xhr.onload = (event) =&gt; {
+        const buffer = new Buffer(xhr.response);
+
+        if (xhr.status === 200) {
+          const parsedMessage = httpMessageParser(buffer);
+          resolve({xhr, response: parsedMessage});
+        } else {
+          let error = new Error('An error occured with request.');
+          let response = {};
+
+          if (!xhr.response.byteLength) {
+            error = new Error('Empty response.');
+          } else {
+            try {
+              response = JSON.parse(arrayBufferToString(buffer));
+            } catch(err) {
+              error = err;
+            }
+          }
+
+          if (response.error instanceof Object) {
+            if (response.error.code === AMAZON_ERROR_CODES.InvalidAccessTokenException) {
+              this.emit(AVS.EventTypes.TOKEN_INVALID);
+            }
+
+            error = response.error.message;
+          }
+
+          this.emit(AVS.EventTypes.ERROR, error);
+          return reject(error);
+        }
+      };
+
+      xhr.onerror = (error) =&gt; {
+        this._log(error);
+        reject(error);
+      };
+
+      const BOUNDARY = 'BOUNDARY1234';
+      const BOUNDARY_DASHES = '--';
+      const NEWLINE = '\r\n';
+      const METADATA_CONTENT_DISPOSITION = 'Content-Disposition: form-data; name="metadata"';
+      const METADATA_CONTENT_TYPE = 'Content-Type: application/json; charset=UTF-8';
+      const AUDIO_CONTENT_TYPE = 'Content-Type: audio/L16; rate=16000; channels=1';
+      const AUDIO_CONTENT_DISPOSITION = 'Content-Disposition: form-data; name="audio"';
+
+      const metadata = {
+        messageHeader: {},
+        messageBody: {
+          profile: 'alexa-close-talk',
+          locale: 'en-us',
+          format: 'audio/L16; rate=16000; channels=1'
+        }
+      };
+
+      const postDataStart = [
+        NEWLINE, BOUNDARY_DASHES, BOUNDARY, NEWLINE, METADATA_CONTENT_DISPOSITION, NEWLINE, METADATA_CONTENT_TYPE,
+        NEWLINE, NEWLINE, JSON.stringify(metadata), NEWLINE, BOUNDARY_DASHES, BOUNDARY, NEWLINE,
+        AUDIO_CONTENT_DISPOSITION, NEWLINE, AUDIO_CONTENT_TYPE, NEWLINE, NEWLINE
+      ].join('');
+
+      const postDataEnd = [NEWLINE, BOUNDARY_DASHES, BOUNDARY, BOUNDARY_DASHES, NEWLINE].join('');
+
+      const size = postDataStart.length + dataView.byteLength + postDataEnd.length;
+      const uint8Array = new Uint8Array(size);
+      let i = 0;
+
+      for (; i &lt; postDataStart.length; i++) {
+        uint8Array[i] = postDataStart.charCodeAt(i) &amp; 0xFF;
+      }
+
+      for (let j = 0; j &lt; dataView.byteLength ; i++, j++) {
+        uint8Array[i] = dataView.getUint8(j);
+      }
+
+      for (let j = 0; j &lt; postDataEnd.length; i++, j++) {
+        uint8Array[i] = postDataEnd.charCodeAt(j) &amp; 0xFF;
+      }
+
+      const payload = uint8Array.buffer;
+
+      xhr.setRequestHeader('Authorization', "Bearer " + this._token);
+      xhr.setRequestHeader('Content-Type', 'multipart/form-data; boundary=' + BOUNDARY);
+      xhr.send(payload);
+    });
+  }
+
+  audioToBlob(audio) {
+    return new Promise((resolve, reject) =&gt; {
+      const blob = new Blob([audio], {type: 'audio/mpeg'});
+
+      resolve(blob);
+    });
+  }
+
+  static get EventTypes() {
+    return {
+      LOG: 'log',
+      ERROR: 'error',
+      LOGIN: 'login',
+      LOGOUT: 'logout',
+      RECORD_START: 'recordStart',
+      RECORD_STOP: 'recordStop',
+      TOKEN_SET: 'tokenSet',
+      REFRESH_TOKEN_SET: 'refreshTokenSet',
+      TOKEN_INVALID: 'tokenInvalid'
+    };
+  }
+
+  static get Player() {
+    return Player;
+  }
+}]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-09-01 12:25:24&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;6595fed237e92e0054db43ba54990ede&lt;/sys_id&gt;&lt;sys_mod_count&gt;21&lt;/sys_mod_count&gt;&lt;sys_name&gt;avs.AVS.js&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_6595fed237e92e0054db43ba54990ede&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-09-02 17:54:10&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Alexa Changes">cf28697a37616e0054db43ba54990eb5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-09-02 20:04:08</sys_created_on>
+<sys_id>c728697a37616e0054db43ba54990eb6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-09-02 20:04:08</sys_updated_on>
+<table/>
+<target_name>avs.AVS.js</target_name>
+<type>UI Script</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_script_9b66361637e92e0054db43ba54990eaa</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;avs.utils.dataViewToBlob.js&lt;/name&gt;&lt;script&gt;&lt;![CDATA['use strict';
+
+function dataViewToBlob(dataView) {
+  const blob = new Blob([dataView], {
+    type: 'audio/wav'
+  });
+
+  return blob;
+}
+
+window.dataViewToBlob = dataViewToBlob;
+]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-09-01 12:29:04&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;9b66361637e92e0054db43ba54990eaa&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;avs.utils.dataViewToBlob.js&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_9b66361637e92e0054db43ba54990eaa&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-09-02 12:18:43&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Alexa Changes">cf28697a37616e0054db43ba54990eb5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-09-02 20:04:08</sys_created_on>
+<sys_id>cb28697a37616e0054db43ba54990eb6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-09-02 20:04:08</sys_updated_on>
+<table/>
+<target_name>avs.utils.dataViewToBlob.js</target_name>
+<type>UI Script</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_script_cfc6f61637e92e0054db43ba54990edc</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;avs.utils.interleave.js&lt;/name&gt;&lt;script&gt;&lt;![CDATA['use strict';
+
+/**
+ * @credit https://github.com/mattdiamond/Recorderjs
+ */
+function interleave(leftChannel, rightChannel) {
+  if (leftChannel &amp;&amp; !rightChannel) {
+    return leftChannel;
+  }
+
+  const length = leftChannel.length + rightChannel.length;
+  let result = new Float32Array(length);
+  let inputIndex = 0;
+
+  for (let index = 0; index &lt; length; ){
+    result[index++] = leftChannel[inputIndex];
+    result[index++] = rightChannel[inputIndex];
+    inputIndex++;
+  }
+
+  return result;
+}
+
+window.interleave = interleave;]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-09-01 12:30:42&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;cfc6f61637e92e0054db43ba54990edc&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;avs.utils.interleave.js&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_cfc6f61637e92e0054db43ba54990edc&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-09-02 12:19:35&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Alexa Changes">cf28697a37616e0054db43ba54990eb5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-09-02 20:04:08</sys_created_on>
+<sys_id>cf28697a37616e0054db43ba54990eb6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-09-02 20:04:08</sys_updated_on>
+<table/>
+<target_name>avs.utils.interleave.js</target_name>
+<type>UI Script</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
